@@ -1,0 +1,389 @@
+{
+	"info": {
+		"_postman_id": "random-uuid",
+		"name": "NextGen Fitness API",
+		"description": "API collection for NextGen Fitness Application",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Get All Users",
+					"request": {
+						"method": "GET",
+						"url": "http://localhost:5000/api/users"
+					}
+				},
+				{
+					"name": "Get User by ID",
+					"request": {
+						"method": "GET",
+						"url": "http://localhost:5000/api/users/1"
+					}
+				},
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"url": "http://localhost:5000/api/users",
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"user@example.com\",\n    \"password_hash\": \"hashedpassword\",\n    \"first_name\": \"John\",\n    \"last_name\": \"Doe\",\n    \"bio\": \"Fitness enthusiast\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						}
+					}
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PUT",
+						"url": "http://localhost:5000/api/users/1",
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"updated@example.com\",\n    \"first_name\": \"Jane\",\n    \"last_name\": \"Smith\",\n    \"bio\": \"Updated bio\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						}
+					}
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"url": "http://localhost:5000/api/users/1"
+					}
+				}
+			]
+		},
+		{
+			"name": "User Stats",
+			"item": [
+				{
+					"name": "Get All Stats",
+					"request": {
+						"method": "GET",
+						"url": "http://localhost:5000/api/user-stats"
+					}
+				},
+				{
+					"name": "Get User Stats",
+					"request": {
+						"method": "GET",
+						"url": "http://localhost:5000/api/user-stats/1"
+					}
+				},
+				{
+					"name": "Create Stats",
+					"request": {
+						"method": "POST",
+						"url": "http://localhost:5000/api/user-stats",
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user_id\": 1,\n    \"workout_count\": 10,\n    \"achievement_count\": 5,\n    \"success_rate\": 85\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						}
+					}
+				},
+				{
+					"name": "Update Stats",
+					"request": {
+						"method": "PUT",
+						"url": "http://localhost:5000/api/user-stats/1",
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"workout_count\": 15,\n    \"achievement_count\": 8,\n    \"success_rate\": 90\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Workouts",
+			"item": [
+				{
+					"name": "Get All Workouts",
+					"request": {
+						"method": "GET",
+						"url": "http://localhost:5000/api/workouts"
+					}
+				},
+				{
+					"name": "Get Workout by ID",
+					"request": {
+						"method": "GET",
+						"url": "http://localhost:5000/api/workouts/1"
+					}
+				},
+				{
+					"name": "Create Workout",
+					"request": {
+						"method": "POST",
+						"url": "http://localhost:5000/api/workouts",
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Full Body Workout\",\n    \"description\": \"Complete full body workout routine\",\n    \"difficulty_level\": \"intermediate\",\n    \"duration_minutes\": 60,\n    \"calories_burned\": 500,\n    \"image_url\": \"workout.jpg\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Exercises",
+			"item": [
+				{
+					"name": "Get All Exercises",
+					"request": {
+						"method": "GET",
+						"url": "http://localhost:5000/api/exercises"
+					}
+				},
+				{
+					"name": "Get Exercises by Workout",
+					"request": {
+						"method": "GET",
+						"url": "http://localhost:5000/api/exercises/workout/1"
+					}
+				},
+				{
+					"name": "Create Exercise",
+					"request": {
+						"method": "POST",
+						"url": "http://localhost:5000/api/exercises",
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"workout_id\": 1,\n    \"name\": \"Push-ups\",\n    \"description\": \"Basic push-up exercise\",\n    \"sets\": 3,\n    \"reps\": 15,\n    \"rest_period_seconds\": 60,\n    \"tips\": \"Keep your core tight\",\n    \"image_url\": \"pushup.jpg\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Meal Plans",
+			"item": [
+				{
+					"name": "Get All Meal Plans",
+					"request": {
+						"method": "GET",
+						"url": "http://localhost:5000/api/meal-plans"
+					}
+				},
+				{
+					"name": "Create Meal Plan",
+					"request": {
+						"method": "POST",
+						"url": "http://localhost:5000/api/meal-plans",
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Weight Loss Plan\",\n    \"description\": \"Low calorie meal plan\",\n    \"total_calories\": 2000,\n    \"protein_grams\": 150,\n    \"carbs_grams\": 200,\n    \"fats_grams\": 67,\n    \"fiber_grams\": 25,\n    \"image_url\": \"mealplan.jpg\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Progress Tracking",
+			"item": [
+				{
+					"name": "Get All Progress",
+					"request": {
+						"method": "GET",
+						"url": "http://localhost:5000/api/progress"
+					}
+				},
+				{
+					"name": "Get User Progress",
+					"request": {
+						"method": "GET",
+						"url": "http://localhost:5000/api/progress/user/1"
+					}
+				},
+				{
+					"name": "Create Progress",
+					"request": {
+						"method": "POST",
+						"url": "http://localhost:5000/api/progress",
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user_id\": 1,\n    \"date\": \"2024-03-15\",\n    \"weight\": 75.5,\n    \"strength_level\": \"intermediate\",\n    \"cardio_performance\": \"good\",\n    \"notes\": \"Feeling stronger\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Achievements",
+			"item": [
+				{
+					"name": "Get All Achievements",
+					"request": {
+						"method": "GET",
+						"url": "http://localhost:5000/api/achievements"
+					}
+				},
+				{
+					"name": "Get User Achievements",
+					"request": {
+						"method": "GET",
+						"url": "http://localhost:5000/api/achievements/user/1"
+					}
+				},
+				{
+					"name": "Create Achievement",
+					"request": {
+						"method": "POST",
+						"url": "http://localhost:5000/api/achievements",
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user_id\": 1,\n    \"name\": \"First Milestone\",\n    \"description\": \"Completed 10 workouts\",\n    \"milestone_value\": 10\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Training Schedule",
+			"item": [
+				{
+					"name": "Get All Schedules",
+					"request": {
+						"method": "GET",
+						"url": "http://localhost:5000/api/schedule"
+					}
+				},
+				{
+					"name": "Get User Schedule",
+					"request": {
+						"method": "GET",
+						"url": "http://localhost:5000/api/schedule/user/1"
+					}
+				},
+				{
+					"name": "Create Schedule",
+					"request": {
+						"method": "POST",
+						"url": "http://localhost:5000/api/schedule",
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user_id\": 1,\n    \"workout_id\": 1,\n    \"scheduled_date\": \"2024-03-16\",\n    \"completion_status\": \"pending\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						}
+					}
+				},
+				{
+					"name": "Update Status",
+					"request": {
+						"method": "PATCH",
+						"url": "http://localhost:5000/api/schedule/1/status",
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"completion_status\": \"completed\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Goals",
+			"item": [
+				{
+					"name": "Get All Goals",
+					"request": {
+						"method": "GET",
+						"url": "http://localhost:5000/api/goals"
+					}
+				},
+				{
+					"name": "Get User Goals",
+					"request": {
+						"method": "GET",
+						"url": "http://localhost:5000/api/goals/user/1"
+					}
+				},
+				{
+					"name": "Create Goal",
+					"request": {
+						"method": "POST",
+						"url": "http://localhost:5000/api/goals",
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user_id\": 1,\n    \"goal_type\": \"weight_loss\",\n    \"target_value\": 70,\n    \"start_date\": \"2024-03-15\",\n    \"target_date\": \"2024-06-15\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						}
+					}
+				},
+				{
+					"name": "Update Goal Status",
+					"request": {
+						"method": "PATCH",
+						"url": "http://localhost:5000/api/goals/1/status",
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status\": \"completed\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						}
+					}
+				}
+			]
+		}
+	]
+}
