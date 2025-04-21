@@ -1,0 +1,555 @@
+2025-04-09 01:55:42,589 - fitness_chatbot - INFO - Calling initialize_llm with args: (), kwargs: {}
+2025-04-09 01:55:42,594 - fitness_chatbot - ERROR - Error in initialize_llm: "OpenRouterLLM" object has no field "api_key"
+2025-04-09 01:55:42,596 - fitness_chatbot - ERROR - Traceback (most recent call last):
+  File "D:\Projects\app.py", line 79, in initialize_llm
+    llm = OpenRouterLLM(
+        model_name="anthropic/claude-3-opus-20240229",
+        temperature=0.7,
+        max_tokens=1000
+    )
+  File "D:\Projects\openrouter_llm.py", line 23, in __init__
+    self.api_key = os.getenv("OPENROUTER_API_KEY")
+    ^^^^^^^^^^^^
+  File "D:\Projects\venv\Lib\site-packages\pydantic\main.py", line 1000, in __setattr__
+    elif (setattr_handler := self._setattr_handler(name, value)) is not None:
+                             ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\Projects\venv\Lib\site-packages\pydantic\main.py", line 1047, in _setattr_handler
+    raise ValueError(f'"{cls.__name__}" object has no field "{name}"')
+ValueError: "OpenRouterLLM" object has no field "api_key"
+
+2025-04-09 01:55:42,597 - fitness_chatbot - INFO - initialize_llm completed in 0.01 seconds
+2025-04-09 01:55:42,604 - fitness_chatbot - INFO - BMI Calculation - Weight: 70kg, Height: 170cm
+2025-04-09 01:55:42,605 - fitness_chatbot - INFO - BMI: 24.22, Category: Normal weight
+2025-04-09 01:55:42,605 - fitness_chatbot - INFO - Macro Calculation - TDEE: 1941, Goal: Weight Loss
+2025-04-09 01:55:42,606 - fitness_chatbot - INFO - Macros: {'calories': 1441, 'protein': 126, 'fat': 40, 'carbs': 144}
+2025-04-09 01:56:02,991 - fitness_chatbot - INFO - BMI Calculation - Weight: 70kg, Height: 170cm
+2025-04-09 01:56:02,991 - fitness_chatbot - INFO - BMI: 24.22, Category: Normal weight
+2025-04-09 01:56:02,992 - fitness_chatbot - INFO - Macro Calculation - TDEE: 1941, Goal: Weight Loss
+2025-04-09 01:56:02,992 - fitness_chatbot - INFO - Macros: {'calories': 1441, 'protein': 126, 'fat': 40, 'carbs': 144}
+2025-04-09 01:56:03,003 - fitness_chatbot - INFO - User: Hi, I want gain my weight
+2025-04-09 01:56:03,004 - fitness_chatbot - INFO - System: ...
+2025-04-09 01:56:32,743 - fitness_chatbot - INFO - BMI Calculation - Weight: 71kg, Height: 170cm
+2025-04-09 01:56:32,744 - fitness_chatbot - INFO - BMI: 24.57, Category: Normal weight
+2025-04-09 01:56:32,745 - fitness_chatbot - INFO - Macro Calculation - TDEE: 1953, Goal: Weight Loss
+2025-04-09 01:56:32,745 - fitness_chatbot - INFO - Macros: {'calories': 1453, 'protein': 127, 'fat': 40, 'carbs': 145}
+2025-04-09 01:56:33,961 - fitness_chatbot - INFO - BMI Calculation - Weight: 70kg, Height: 170cm
+2025-04-09 01:56:33,962 - fitness_chatbot - INFO - BMI: 24.22, Category: Normal weight
+2025-04-09 01:56:33,962 - fitness_chatbot - INFO - Macro Calculation - TDEE: 1941, Goal: Weight Loss
+2025-04-09 01:56:33,963 - fitness_chatbot - INFO - Macros: {'calories': 1441, 'protein': 126, 'fat': 40, 'carbs': 144}
+2025-04-09 02:00:30,191 - fitness_chatbot - INFO - BMI Calculation - Weight: 70kg, Height: 171cm
+2025-04-09 02:00:30,191 - fitness_chatbot - INFO - BMI: 23.94, Category: Normal weight
+2025-04-09 02:00:30,192 - fitness_chatbot - INFO - Macro Calculation - TDEE: 1948, Goal: Weight Loss
+2025-04-09 02:00:30,192 - fitness_chatbot - INFO - Macros: {'calories': 1448, 'protein': 127, 'fat': 40, 'carbs': 145}
+2025-04-09 02:00:31,237 - fitness_chatbot - INFO - BMI Calculation - Weight: 70kg, Height: 171cm
+2025-04-09 02:00:31,238 - fitness_chatbot - INFO - BMI: 23.94, Category: Normal weight
+2025-04-09 02:00:31,238 - fitness_chatbot - INFO - Macro Calculation - TDEE: 1942, Goal: Weight Loss
+2025-04-09 02:00:31,239 - fitness_chatbot - INFO - Macros: {'calories': 1442, 'protein': 126, 'fat': 40, 'carbs': 144}
+2025-04-09 02:07:18,384 - fitness_chatbot - INFO - BMI Calculation - Weight: 71kg, Height: 171cm
+2025-04-09 02:07:18,384 - fitness_chatbot - INFO - BMI: 24.28, Category: Normal weight
+2025-04-09 02:07:18,385 - fitness_chatbot - INFO - Macro Calculation - TDEE: 1954, Goal: Weight Loss
+2025-04-09 02:07:18,385 - fitness_chatbot - INFO - Macros: {'calories': 1454, 'protein': 127, 'fat': 40, 'carbs': 145}
+2025-04-09 02:09:24,815 - fitness_chatbot - INFO - Calling initialize_llm with args: (), kwargs: {}
+2025-04-09 02:09:24,820 - fitness_chatbot - ERROR - Error in initialize_llm: "OpenRouterLLM" object has no field "api_key"
+2025-04-09 02:09:24,825 - fitness_chatbot - ERROR - Traceback (most recent call last):
+  File "D:\Projects\app.py", line 79, in initialize_llm
+    llm = OpenRouterLLM(
+        model_name="anthropic/claude-3-opus-20240229",
+        temperature=0.7,
+        max_tokens=1000
+    )
+  File "D:\Projects\openrouter_llm.py", line 23, in __init__
+    self.api_key = os.getenv("OPENROUTER_API_KEY")
+    ^^^^^^^^^^^^
+  File "D:\Projects\venv\Lib\site-packages\pydantic\main.py", line 1000, in __setattr__
+    elif (setattr_handler := self._setattr_handler(name, value)) is not None:
+                             ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\Projects\venv\Lib\site-packages\pydantic\main.py", line 1047, in _setattr_handler
+    raise ValueError(f'"{cls.__name__}" object has no field "{name}"')
+ValueError: "OpenRouterLLM" object has no field "api_key"
+
+2025-04-09 02:09:24,826 - fitness_chatbot - INFO - initialize_llm completed in 0.01 seconds
+2025-04-09 02:09:24,833 - fitness_chatbot - INFO - BMI Calculation - Weight: 70kg, Height: 170cm
+2025-04-09 02:09:24,834 - fitness_chatbot - INFO - BMI: 24.22, Category: Normal weight
+2025-04-09 02:09:24,834 - fitness_chatbot - INFO - Macro Calculation - TDEE: 1941, Goal: Weight Loss
+2025-04-09 02:09:24,834 - fitness_chatbot - INFO - Macros: {'calories': 1441, 'protein': 126, 'fat': 40, 'carbs': 144}
+2025-04-09 02:09:29,802 - fitness_chatbot - INFO - BMI Calculation - Weight: 71kg, Height: 170cm
+2025-04-09 02:09:29,802 - fitness_chatbot - INFO - BMI: 24.57, Category: Normal weight
+2025-04-09 02:09:29,803 - fitness_chatbot - INFO - Macro Calculation - TDEE: 1953, Goal: Weight Loss
+2025-04-09 02:09:29,803 - fitness_chatbot - INFO - Macros: {'calories': 1453, 'protein': 127, 'fat': 40, 'carbs': 145}
+2025-04-09 02:09:31,073 - fitness_chatbot - INFO - BMI Calculation - Weight: 71kg, Height: 171cm
+2025-04-09 02:09:31,074 - fitness_chatbot - INFO - BMI: 24.28, Category: Normal weight
+2025-04-09 02:09:31,074 - fitness_chatbot - INFO - Macro Calculation - TDEE: 1960, Goal: Weight Loss
+2025-04-09 02:09:31,074 - fitness_chatbot - INFO - Macros: {'calories': 1460, 'protein': 128, 'fat': 41, 'carbs': 146}
+2025-04-09 02:09:43,020 - fitness_chatbot - INFO - BMI Calculation - Weight: 71kg, Height: 171cm
+2025-04-09 02:09:43,020 - fitness_chatbot - INFO - BMI: 24.28, Category: Normal weight
+2025-04-09 02:09:43,021 - fitness_chatbot - INFO - Macro Calculation - TDEE: 1960, Goal: Weight Loss
+2025-04-09 02:09:43,021 - fitness_chatbot - INFO - Macros: {'calories': 1460, 'protein': 128, 'fat': 41, 'carbs': 146}
+2025-04-09 02:10:00,639 - fitness_chatbot - INFO - BMI Calculation - Weight: 70kg, Height: 171cm
+2025-04-09 02:10:00,640 - fitness_chatbot - INFO - BMI: 23.94, Category: Normal weight
+2025-04-09 02:10:00,640 - fitness_chatbot - INFO - Macro Calculation - TDEE: 1948, Goal: Weight Loss
+2025-04-09 02:10:00,640 - fitness_chatbot - INFO - Macros: {'calories': 1448, 'protein': 127, 'fat': 40, 'carbs': 145}
+2025-04-09 02:10:00,858 - fitness_chatbot - INFO - BMI Calculation - Weight: 69kg, Height: 171cm
+2025-04-09 02:10:00,859 - fitness_chatbot - INFO - BMI: 23.60, Category: Normal weight
+2025-04-09 02:10:00,859 - fitness_chatbot - INFO - Macro Calculation - TDEE: 1936, Goal: Weight Loss
+2025-04-09 02:10:00,859 - fitness_chatbot - INFO - Macros: {'calories': 1436, 'protein': 126, 'fat': 40, 'carbs': 144}
+2025-04-09 02:10:01,074 - fitness_chatbot - INFO - BMI Calculation - Weight: 68kg, Height: 171cm
+2025-04-09 02:10:01,075 - fitness_chatbot - INFO - BMI: 23.26, Category: Normal weight
+2025-04-09 02:10:01,075 - fitness_chatbot - INFO - Macro Calculation - TDEE: 1924, Goal: Weight Loss
+2025-04-09 02:10:01,076 - fitness_chatbot - INFO - Macros: {'calories': 1424, 'protein': 125, 'fat': 40, 'carbs': 142}
+2025-04-09 02:10:01,291 - fitness_chatbot - INFO - BMI Calculation - Weight: 67kg, Height: 171cm
+2025-04-09 02:10:01,291 - fitness_chatbot - INFO - BMI: 22.91, Category: Normal weight
+2025-04-09 02:10:01,292 - fitness_chatbot - INFO - Macro Calculation - TDEE: 1912, Goal: Weight Loss
+2025-04-09 02:10:01,292 - fitness_chatbot - INFO - Macros: {'calories': 1412, 'protein': 124, 'fat': 39, 'carbs': 141}
+2025-04-09 02:10:07,863 - fitness_chatbot - INFO - BMI Calculation - Weight: 67kg, Height: 171cm
+2025-04-09 02:10:07,864 - fitness_chatbot - INFO - BMI: 22.91, Category: Normal weight
+2025-04-09 02:10:07,864 - fitness_chatbot - INFO - Macro Calculation - TDEE: 1912, Goal: Weight Loss
+2025-04-09 02:10:07,865 - fitness_chatbot - INFO - Macros: {'calories': 1412, 'protein': 124, 'fat': 39, 'carbs': 141}
+2025-04-09 02:10:07,871 - fitness_chatbot - INFO - Calling generate_meal_plan with args: ('Weight Loss', 'Sedentary', ['Vegetarian']), kwargs: {}
+2025-04-09 02:10:07,872 - fitness_chatbot - INFO - generate_meal_plan completed in 0.00 seconds
+2025-04-15 11:26:44,901 - fitness_chatbot - INFO - Calling initialize_llm with args: (), kwargs: {}
+2025-04-15 11:26:44,907 - fitness_chatbot - ERROR - Error in initialize_llm: "OpenRouterLLM" object has no field "api_key"
+2025-04-15 11:26:44,962 - fitness_chatbot - ERROR - Traceback (most recent call last):
+  File "D:\Projects\app.py", line 79, in initialize_llm
+    llm = OpenRouterLLM(
+        model_name="anthropic/claude-3-opus-20240229",
+        temperature=0.7,
+        max_tokens=1000
+    )
+  File "D:\Projects\openrouter_llm.py", line 23, in __init__
+    self.api_key = os.getenv("OPENROUTER_API_KEY")
+    ^^^^^^^^^^^^
+  File "D:\Projects\venv\Lib\site-packages\pydantic\main.py", line 1000, in __setattr__
+    elif (setattr_handler := self._setattr_handler(name, value)) is not None:
+                             ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\Projects\venv\Lib\site-packages\pydantic\main.py", line 1047, in _setattr_handler
+    raise ValueError(f'"{cls.__name__}" object has no field "{name}"')
+ValueError: "OpenRouterLLM" object has no field "api_key"
+
+2025-04-15 11:26:44,966 - fitness_chatbot - INFO - initialize_llm completed in 0.07 seconds
+2025-04-15 11:26:44,999 - fitness_chatbot - INFO - BMI Calculation - Weight: 70kg, Height: 170cm
+2025-04-15 11:26:45,000 - fitness_chatbot - INFO - BMI: 24.22, Category: Normal weight
+2025-04-15 11:26:45,001 - fitness_chatbot - INFO - Macro Calculation - TDEE: 1941, Goal: Weight Loss
+2025-04-15 11:26:45,002 - fitness_chatbot - INFO - Macros: {'calories': 1441, 'protein': 126, 'fat': 40, 'carbs': 144}
+2025-04-15 11:26:49,048 - fitness_chatbot - INFO - BMI Calculation - Weight: 70kg, Height: 171cm
+2025-04-15 11:26:49,048 - fitness_chatbot - INFO - BMI: 23.94, Category: Normal weight
+2025-04-15 11:26:49,049 - fitness_chatbot - INFO - Macro Calculation - TDEE: 1948, Goal: Weight Loss
+2025-04-15 11:26:49,050 - fitness_chatbot - INFO - Macros: {'calories': 1448, 'protein': 127, 'fat': 40, 'carbs': 145}
+2025-04-15 11:26:50,610 - fitness_chatbot - INFO - BMI Calculation - Weight: 71kg, Height: 171cm
+2025-04-15 11:26:50,611 - fitness_chatbot - INFO - BMI: 24.28, Category: Normal weight
+2025-04-15 11:26:50,611 - fitness_chatbot - INFO - Macro Calculation - TDEE: 1960, Goal: Weight Loss
+2025-04-15 11:26:50,612 - fitness_chatbot - INFO - Macros: {'calories': 1460, 'protein': 128, 'fat': 41, 'carbs': 146}
+2025-04-15 11:26:56,922 - fitness_chatbot - INFO - BMI Calculation - Weight: 72kg, Height: 171cm
+2025-04-15 11:26:56,923 - fitness_chatbot - INFO - BMI: 24.62, Category: Normal weight
+2025-04-15 11:26:56,924 - fitness_chatbot - INFO - Macro Calculation - TDEE: 1972, Goal: Weight Loss
+2025-04-15 11:26:56,924 - fitness_chatbot - INFO - Macros: {'calories': 1472, 'protein': 129, 'fat': 41, 'carbs': 147}
+2025-04-15 11:27:07,568 - fitness_chatbot - INFO - BMI Calculation - Weight: 72kg, Height: 171cm
+2025-04-15 11:27:07,569 - fitness_chatbot - INFO - BMI: 24.62, Category: Normal weight
+2025-04-15 11:27:07,572 - fitness_chatbot - INFO - Macro Calculation - TDEE: 1972, Goal: Weight Loss
+2025-04-15 11:27:07,573 - fitness_chatbot - INFO - Macros: {'calories': 1472, 'protein': 129, 'fat': 41, 'carbs': 147}
+2025-04-15 11:27:07,584 - fitness_chatbot - INFO - Calling generate_meal_plan with args: ('Weight Loss', 'Sedentary', []), kwargs: {}
+2025-04-15 11:27:07,585 - fitness_chatbot - INFO - generate_meal_plan completed in 0.00 seconds
+2025-04-15 11:28:19,650 - fitness_chatbot - INFO - Calling initialize_llm with args: (), kwargs: {}
+2025-04-15 11:28:19,663 - fitness_chatbot - ERROR - Error in initialize_llm: "OpenRouterLLM" object has no field "api_base"
+2025-04-15 11:28:19,666 - fitness_chatbot - ERROR - Traceback (most recent call last):
+  File "D:\Projects\app.py", line 79, in initialize_llm
+    llm = OpenRouterLLM(
+        model_name="anthropic/claude-3-opus-20240229",
+        temperature=0.7,
+        max_tokens=1000
+    )
+  File "D:\Projects\openrouter_llm.py", line 28, in __init__
+    self.api_base = "https://openrouter.ai/api/v1"
+    ^^^^^^^^^^^^^
+  File "D:\Projects\venv\Lib\site-packages\pydantic\main.py", line 1000, in __setattr__
+    elif (setattr_handler := self._setattr_handler(name, value)) is not None:
+                             ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\Projects\venv\Lib\site-packages\pydantic\main.py", line 1047, in _setattr_handler
+    raise ValueError(f'"{cls.__name__}" object has no field "{name}"')
+ValueError: "OpenRouterLLM" object has no field "api_base"
+
+2025-04-15 11:28:19,667 - fitness_chatbot - INFO - initialize_llm completed in 0.02 seconds
+2025-04-15 11:28:19,673 - fitness_chatbot - INFO - BMI Calculation - Weight: 70kg, Height: 170cm
+2025-04-15 11:28:19,674 - fitness_chatbot - INFO - BMI: 24.22, Category: Normal weight
+2025-04-15 11:28:19,674 - fitness_chatbot - INFO - Macro Calculation - TDEE: 1941, Goal: Weight Loss
+2025-04-15 11:28:19,678 - fitness_chatbot - INFO - Macros: {'calories': 1441, 'protein': 126, 'fat': 40, 'carbs': 144}
+2025-04-15 11:28:24,561 - fitness_chatbot - INFO - BMI Calculation - Weight: 70kg, Height: 170cm
+2025-04-15 11:28:24,562 - fitness_chatbot - INFO - BMI: 24.22, Category: Normal weight
+2025-04-15 11:28:24,562 - fitness_chatbot - INFO - Macro Calculation - TDEE: 1941, Goal: Weight Loss
+2025-04-15 11:28:24,563 - fitness_chatbot - INFO - Macros: {'calories': 1441, 'protein': 126, 'fat': 40, 'carbs': 144}
+2025-04-15 11:28:24,577 - fitness_chatbot - INFO - Calling generate_meal_plan with args: ('Weight Loss', 'Sedentary', []), kwargs: {}
+2025-04-15 11:28:24,578 - fitness_chatbot - INFO - generate_meal_plan completed in 0.00 seconds
+2025-04-15 11:29:28,215 - fitness_chatbot - INFO - Calling initialize_llm with args: (), kwargs: {}
+2025-04-15 11:29:28,217 - fitness_chatbot - INFO - initialize_llm completed in 0.00 seconds
+2025-04-15 11:29:28,218 - fitness_chatbot - INFO - Calling create_conversation_chain with args: (OpenRouterLLM(api_key='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', headers={'Authorization': 'Bearer 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', 'Content-Type': 'application/json', 'HTTP-Referer': 'https://github.com/yourusername/fitness-chatbot', 'X-Title': 'Fitness & Nutrition Assistant'}),), kwargs: {}
+2025-04-15 11:29:28,221 - fitness_chatbot - INFO - create_conversation_chain completed in 0.00 seconds
+2025-04-15 11:29:28,227 - fitness_chatbot - INFO - BMI Calculation - Weight: 70kg, Height: 170cm
+2025-04-15 11:29:28,227 - fitness_chatbot - INFO - BMI: 24.22, Category: Normal weight
+2025-04-15 11:29:28,228 - fitness_chatbot - INFO - Macro Calculation - TDEE: 1941, Goal: Weight Loss
+2025-04-15 11:29:28,228 - fitness_chatbot - INFO - Macros: {'calories': 1441, 'protein': 126, 'fat': 40, 'carbs': 144}
+2025-04-15 11:29:33,016 - fitness_chatbot - INFO - BMI Calculation - Weight: 70kg, Height: 170cm
+2025-04-15 11:29:33,016 - fitness_chatbot - INFO - BMI: 24.22, Category: Normal weight
+2025-04-15 11:29:33,017 - fitness_chatbot - INFO - Macro Calculation - TDEE: 1941, Goal: Weight Loss
+2025-04-15 11:29:33,018 - fitness_chatbot - INFO - Macros: {'calories': 1441, 'protein': 126, 'fat': 40, 'carbs': 144}
+2025-04-15 11:29:33,028 - fitness_chatbot - INFO - Calling generate_meal_plan with args: ('Weight Loss', 'Sedentary', []), kwargs: {}
+2025-04-15 11:29:33,028 - fitness_chatbot - INFO - generate_meal_plan completed in 0.00 seconds
+2025-04-15 11:29:33,032 - fitness_chatbot - INFO - Calling get_ai_response with args: (ConversationChain(memory=ConversationBufferMemory(chat_memory=InMemoryChatMessageHistory(messages=[]), return_messages=True), verbose=True, prompt=PromptTemplate(input_variables=['history', 'input'], input_types={}, partial_variables={}, template="You are an expert fitness and nutrition coach. You provide personalized advice based on users' goals, \n    current fitness level, and preferences. Always give specific, actionable advice and maintain a supportive, \n    encouraging tone.\n    \n    You can:\n    1. Suggest meal plans based on user's goals and preferences\n    2. Recommend workout routines and exercise plans\n    3. Calculate and explain BMI and other health metrics\n    4. Provide nutrition advice for different fitness goals\n    5. Help with tracking progress and adjusting plans\n    \n    Current conversation:\n    {history}\n    Human: {input}\n    AI Assistant:"), llm=OpenRouterLLM(api_key='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', headers={'Authorization': 'Bearer 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', 'Content-Type': 'application/json', 'HTTP-Referer': 'https://github.com/yourusername/fitness-chatbot', 'X-Title': 'Fitness & Nutrition Assistant'}), output_parser=StrOutputParser(), llm_kwargs={}), 'Generate a 7-day meal plan for someone with the following profile:\n    - Fitness Goal: Weight Loss\n    - Activity Level: Sedentary\n    - Dietary Restrictions: []\n    \n    Include breakfast, lunch, dinner, and snacks. For each meal, provide:\n    1. Ingredients and portions\n    2. Approximate calories and macronutrients\n    3. Preparation instructions\n    4. Nutritional benefits\n    \n    Format the response as a structured meal plan with clear sections for each day.'), kwargs: {}
+2025-04-15 11:29:35,012 - fitness_chatbot - INFO - LLM Request to OpenRouter:
+2025-04-15 11:29:35,013 - fitness_chatbot - INFO - Prompt: Generate a 7-day meal plan for someone with the following profile:
+    - Fitness Goal: Weight Loss
+    - Activity Level: Sedentary
+    - Dietary Restrictions: []
+    
+    Include breakfast, lunch, din...
+2025-04-15 11:29:35,013 - fitness_chatbot - INFO - Response: Error: 'choices'...
+2025-04-15 11:29:35,014 - fitness_chatbot - INFO - Duration: 1.98 seconds
+2025-04-15 11:29:35,014 - fitness_chatbot - INFO - get_ai_response completed in 1.98 seconds
+2025-04-15 11:30:09,711 - fitness_chatbot - INFO - BMI Calculation - Weight: 70kg, Height: 170cm
+2025-04-15 11:30:09,712 - fitness_chatbot - INFO - BMI: 24.22, Category: Normal weight
+2025-04-15 11:30:09,713 - fitness_chatbot - INFO - Macro Calculation - TDEE: 1941, Goal: Weight Loss
+2025-04-15 11:30:09,714 - fitness_chatbot - INFO - Macros: {'calories': 1441, 'protein': 126, 'fat': 40, 'carbs': 144}
+2025-04-15 11:30:09,736 - fitness_chatbot - INFO - User: suggest me workout plan
+2025-04-15 11:30:09,737 - fitness_chatbot - INFO - System: ...
+2025-04-15 11:30:09,739 - fitness_chatbot - INFO - Calling get_ai_response with args: (ConversationChain(memory=ConversationBufferMemory(chat_memory=InMemoryChatMessageHistory(messages=[HumanMessage(content='Generate a 7-day meal plan for someone with the following profile:\n    - Fitness Goal: Weight Loss\n    - Activity Level: Sedentary\n    - Dietary Restrictions: []\n    \n    Include breakfast, lunch, dinner, and snacks. For each meal, provide:\n    1. Ingredients and portions\n    2. Approximate calories and macronutrients\n    3. Preparation instructions\n    4. Nutritional benefits\n    \n    Format the response as a structured meal plan with clear sections for each day.', additional_kwargs={}, response_metadata={}), AIMessage(content="Error: 'choices'", additional_kwargs={}, response_metadata={})]), return_messages=True), verbose=True, prompt=PromptTemplate(input_variables=['history', 'input'], input_types={}, partial_variables={}, template="You are an expert fitness and nutrition coach. You provide personalized advice based on users' goals, \n    current fitness level, and preferences. Always give specific, actionable advice and maintain a supportive, \n    encouraging tone.\n    \n    You can:\n    1. Suggest meal plans based on user's goals and preferences\n    2. Recommend workout routines and exercise plans\n    3. Calculate and explain BMI and other health metrics\n    4. Provide nutrition advice for different fitness goals\n    5. Help with tracking progress and adjusting plans\n    \n    Current conversation:\n    {history}\n    Human: {input}\n    AI Assistant:"), llm=OpenRouterLLM(api_key='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', headers={'Authorization': 'Bearer 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', 'Content-Type': 'application/json', 'HTTP-Referer': 'https://github.com/yourusername/fitness-chatbot', 'X-Title': 'Fitness & Nutrition Assistant'}), output_parser=StrOutputParser(), llm_kwargs={}), 'User Profile:\n        - Weight: 70 kg\n        - Height: 170 cm\n        - Age: 30\n        - Gender: Male\n        - BMI: 24.2 (Normal weight)\n        - Fitness Goal: Weight Loss\n        - Activity Level: Sedentary\n        - Fitness Level: Beginner\n        - Dietary Restrictions: None\n        - Daily Calorie Target: 1441 calories\n        - Macronutrients: 126g protein, 144g carbs, 40g fat\n\n        User Question: suggest me workout plan'), kwargs: {}
+2025-04-15 11:30:11,523 - fitness_chatbot - INFO - LLM Request to OpenRouter:
+2025-04-15 11:30:11,524 - fitness_chatbot - INFO - Prompt: User Profile:
+        - Weight: 70 kg
+        - Height: 170 cm
+        - Age: 30
+        - Gender: Male
+        - BMI: 24.2 (Normal weight)
+        - Fitness Goal: Weight Loss
+        - Activity Level...
+2025-04-15 11:30:11,524 - fitness_chatbot - INFO - Response: Error: 'choices'...
+2025-04-15 11:30:11,525 - fitness_chatbot - INFO - Duration: 1.78 seconds
+2025-04-15 11:30:11,526 - fitness_chatbot - INFO - get_ai_response completed in 1.79 seconds
+2025-04-15 11:30:11,526 - fitness_chatbot - INFO - User: suggest me workout plan
+2025-04-15 11:30:11,527 - fitness_chatbot - INFO - System: Error: 'choices'...
+2025-04-15 11:32:09,518 - fitness_chatbot - INFO - BMI Calculation - Weight: 71kg, Height: 170cm
+2025-04-15 11:32:09,518 - fitness_chatbot - INFO - BMI: 24.57, Category: Normal weight
+2025-04-15 11:32:09,519 - fitness_chatbot - INFO - Macro Calculation - TDEE: 1953, Goal: Weight Loss
+2025-04-15 11:32:09,520 - fitness_chatbot - INFO - Macros: {'calories': 1453, 'protein': 127, 'fat': 40, 'carbs': 145}
+2025-04-15 11:32:10,651 - fitness_chatbot - INFO - BMI Calculation - Weight: 71kg, Height: 171cm
+2025-04-15 11:32:10,657 - fitness_chatbot - INFO - BMI: 24.28, Category: Normal weight
+2025-04-15 11:32:10,658 - fitness_chatbot - INFO - Macro Calculation - TDEE: 1960, Goal: Weight Loss
+2025-04-15 11:32:10,658 - fitness_chatbot - INFO - Macros: {'calories': 1460, 'protein': 128, 'fat': 41, 'carbs': 146}
+2025-04-15 11:32:23,528 - fitness_chatbot - INFO - BMI Calculation - Weight: 71kg, Height: 171cm
+2025-04-15 11:32:23,529 - fitness_chatbot - INFO - BMI: 24.28, Category: Normal weight
+2025-04-15 11:32:23,530 - fitness_chatbot - INFO - Macro Calculation - TDEE: 1960, Goal: Weight Loss
+2025-04-15 11:32:23,530 - fitness_chatbot - INFO - Macros: {'calories': 1460, 'protein': 128, 'fat': 41, 'carbs': 146}
+2025-04-15 11:32:23,546 - fitness_chatbot - INFO - Calling generate_meal_plan with args: ('Weight Loss', 'Sedentary', []), kwargs: {}
+2025-04-15 11:32:23,547 - fitness_chatbot - INFO - generate_meal_plan completed in 0.00 seconds
+2025-04-15 11:32:23,551 - fitness_chatbot - INFO - Calling get_ai_response with args: (ConversationChain(memory=ConversationBufferMemory(chat_memory=InMemoryChatMessageHistory(messages=[HumanMessage(content='Generate a 7-day meal plan for someone with the following profile:\n    - Fitness Goal: Weight Loss\n    - Activity Level: Sedentary\n    - Dietary Restrictions: []\n    \n    Include breakfast, lunch, dinner, and snacks. For each meal, provide:\n    1. Ingredients and portions\n    2. Approximate calories and macronutrients\n    3. Preparation instructions\n    4. Nutritional benefits\n    \n    Format the response as a structured meal plan with clear sections for each day.', additional_kwargs={}, response_metadata={}), AIMessage(content="Error: 'choices'", additional_kwargs={}, response_metadata={}), HumanMessage(content='User Profile:\n        - Weight: 70 kg\n        - Height: 170 cm\n        - Age: 30\n        - Gender: Male\n        - BMI: 24.2 (Normal weight)\n        - Fitness Goal: Weight Loss\n        - Activity Level: Sedentary\n        - Fitness Level: Beginner\n        - Dietary Restrictions: None\n        - Daily Calorie Target: 1441 calories\n        - Macronutrients: 126g protein, 144g carbs, 40g fat\n\n        User Question: suggest me workout plan', additional_kwargs={}, response_metadata={}), AIMessage(content="Error: 'choices'", additional_kwargs={}, response_metadata={})]), return_messages=True), verbose=True, prompt=PromptTemplate(input_variables=['history', 'input'], input_types={}, partial_variables={}, template="You are an expert fitness and nutrition coach. You provide personalized advice based on users' goals, \n    current fitness level, and preferences. Always give specific, actionable advice and maintain a supportive, \n    encouraging tone.\n    \n    You can:\n    1. Suggest meal plans based on user's goals and preferences\n    2. Recommend workout routines and exercise plans\n    3. Calculate and explain BMI and other health metrics\n    4. Provide nutrition advice for different fitness goals\n    5. Help with tracking progress and adjusting plans\n    \n    Current conversation:\n    {history}\n    Human: {input}\n    AI Assistant:"), llm=OpenRouterLLM(api_key='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', headers={'Authorization': 'Bearer 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', 'Content-Type': 'application/json', 'HTTP-Referer': 'https://github.com/yourusername/fitness-chatbot', 'X-Title': 'Fitness & Nutrition Assistant'}), output_parser=StrOutputParser(), llm_kwargs={}), 'Generate a 7-day meal plan for someone with the following profile:\n    - Fitness Goal: Weight Loss\n    - Activity Level: Sedentary\n    - Dietary Restrictions: []\n    \n    Include breakfast, lunch, dinner, and snacks. For each meal, provide:\n    1. Ingredients and portions\n    2. Approximate calories and macronutrients\n    3. Preparation instructions\n    4. Nutritional benefits\n    \n    Format the response as a structured meal plan with clear sections for each day.'), kwargs: {}
+2025-04-15 11:32:25,176 - fitness_chatbot - INFO - LLM Request to OpenRouter:
+2025-04-15 11:32:25,176 - fitness_chatbot - INFO - Prompt: Generate a 7-day meal plan for someone with the following profile:
+    - Fitness Goal: Weight Loss
+    - Activity Level: Sedentary
+    - Dietary Restrictions: []
+    
+    Include breakfast, lunch, din...
+2025-04-15 11:32:25,177 - fitness_chatbot - INFO - Response: Error: 'choices'...
+2025-04-15 11:32:25,178 - fitness_chatbot - INFO - Duration: 1.62 seconds
+2025-04-15 11:32:25,179 - fitness_chatbot - INFO - get_ai_response completed in 1.63 seconds
+2025-04-15 11:36:34,578 - fitness_chatbot - INFO - Calling initialize_llm with args: (), kwargs: {}
+2025-04-15 11:36:34,581 - fitness_chatbot - INFO - initialize_llm completed in 0.00 seconds
+2025-04-15 11:36:34,581 - fitness_chatbot - INFO - Calling create_conversation_chain with args: (OpenRouterLLM(api_key='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', headers={'Authorization': 'Bearer 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', 'Content-Type': 'application/json', 'HTTP-Referer': 'https://github.com/yourusername/fitness-chatbot', 'X-Title': 'Fitness & Nutrition Assistant'}),), kwargs: {}
+2025-04-15 11:36:34,582 - fitness_chatbot - INFO - create_conversation_chain completed in 0.00 seconds
+2025-04-15 11:36:34,589 - fitness_chatbot - INFO - BMI Calculation - Weight: 70kg, Height: 170cm
+2025-04-15 11:36:34,590 - fitness_chatbot - INFO - BMI: 24.22, Category: Normal weight
+2025-04-15 11:36:34,591 - fitness_chatbot - INFO - Macro Calculation - TDEE: 1941, Goal: Weight Loss
+2025-04-15 11:36:34,591 - fitness_chatbot - INFO - Macros: {'calories': 1441, 'protein': 126, 'fat': 40, 'carbs': 144}
+2025-04-15 11:36:38,746 - fitness_chatbot - INFO - BMI Calculation - Weight: 70kg, Height: 170cm
+2025-04-15 11:36:38,747 - fitness_chatbot - INFO - BMI: 24.22, Category: Normal weight
+2025-04-15 11:36:38,748 - fitness_chatbot - INFO - Macro Calculation - TDEE: 1941, Goal: Weight Loss
+2025-04-15 11:36:38,748 - fitness_chatbot - INFO - Macros: {'calories': 1441, 'protein': 126, 'fat': 40, 'carbs': 144}
+2025-04-15 11:36:38,758 - fitness_chatbot - INFO - Calling generate_meal_plan with args: ('Weight Loss', 'Sedentary', []), kwargs: {}
+2025-04-15 11:36:38,759 - fitness_chatbot - INFO - generate_meal_plan completed in 0.00 seconds
+2025-04-15 11:36:38,762 - fitness_chatbot - INFO - Calling get_ai_response with args: (ConversationChain(memory=ConversationBufferMemory(chat_memory=InMemoryChatMessageHistory(messages=[]), return_messages=True), verbose=True, prompt=PromptTemplate(input_variables=['history', 'input'], input_types={}, partial_variables={}, template="You are an expert fitness and nutrition coach. You provide personalized advice based on users' goals, \n    current fitness level, and preferences. Always give specific, actionable advice and maintain a supportive, \n    encouraging tone.\n    \n    You can:\n    1. Suggest meal plans based on user's goals and preferences\n    2. Recommend workout routines and exercise plans\n    3. Calculate and explain BMI and other health metrics\n    4. Provide nutrition advice for different fitness goals\n    5. Help with tracking progress and adjusting plans\n    \n    Current conversation:\n    {history}\n    Human: {input}\n    AI Assistant:"), llm=OpenRouterLLM(api_key='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', headers={'Authorization': 'Bearer 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', 'Content-Type': 'application/json', 'HTTP-Referer': 'https://github.com/yourusername/fitness-chatbot', 'X-Title': 'Fitness & Nutrition Assistant'}), output_parser=StrOutputParser(), llm_kwargs={}), 'Generate a 7-day meal plan for someone with the following profile:\n    - Fitness Goal: Weight Loss\n    - Activity Level: Sedentary\n    - Dietary Restrictions: []\n    \n    Include breakfast, lunch, dinner, and snacks. For each meal, provide:\n    1. Ingredients and portions\n    2. Approximate calories and macronutrients\n    3. Preparation instructions\n    4. Nutritional benefits\n    \n    Format the response as a structured meal plan with clear sections for each day.'), kwargs: {}
+2025-04-15 11:36:41,080 - fitness_chatbot - INFO - LLM Request to OpenRouter:
+2025-04-15 11:36:41,081 - fitness_chatbot - INFO - Prompt: Generate a 7-day meal plan for someone with the following profile:
+    - Fitness Goal: Weight Loss
+    - Activity Level: Sedentary
+    - Dietary Restrictions: []
+    
+    Include breakfast, lunch, din...
+2025-04-15 11:36:41,082 - fitness_chatbot - INFO - Response: Error: No response from the model...
+2025-04-15 11:36:41,082 - fitness_chatbot - INFO - Duration: 2.32 seconds
+2025-04-15 11:36:41,083 - fitness_chatbot - INFO - get_ai_response completed in 2.32 seconds
+2025-04-15 11:37:27,929 - fitness_chatbot - INFO - BMI Calculation - Weight: 70kg, Height: 170cm
+2025-04-15 11:37:27,930 - fitness_chatbot - INFO - BMI: 24.22, Category: Normal weight
+2025-04-15 11:37:27,931 - fitness_chatbot - INFO - Macro Calculation - TDEE: 1941, Goal: Weight Loss
+2025-04-15 11:37:27,931 - fitness_chatbot - INFO - Macros: {'calories': 1441, 'protein': 126, 'fat': 40, 'carbs': 144}
+2025-04-15 11:37:27,936 - fitness_chatbot - INFO - User: hoe gain fat
+2025-04-15 11:37:27,936 - fitness_chatbot - INFO - System: ...
+2025-04-15 11:37:27,937 - fitness_chatbot - INFO - Calling get_ai_response with args: (ConversationChain(memory=ConversationBufferMemory(chat_memory=InMemoryChatMessageHistory(messages=[HumanMessage(content='Generate a 7-day meal plan for someone with the following profile:\n    - Fitness Goal: Weight Loss\n    - Activity Level: Sedentary\n    - Dietary Restrictions: []\n    \n    Include breakfast, lunch, dinner, and snacks. For each meal, provide:\n    1. Ingredients and portions\n    2. Approximate calories and macronutrients\n    3. Preparation instructions\n    4. Nutritional benefits\n    \n    Format the response as a structured meal plan with clear sections for each day.', additional_kwargs={}, response_metadata={}), AIMessage(content='Error: No response from the model', additional_kwargs={}, response_metadata={})]), return_messages=True), verbose=True, prompt=PromptTemplate(input_variables=['history', 'input'], input_types={}, partial_variables={}, template="You are an expert fitness and nutrition coach. You provide personalized advice based on users' goals, \n    current fitness level, and preferences. Always give specific, actionable advice and maintain a supportive, \n    encouraging tone.\n    \n    You can:\n    1. Suggest meal plans based on user's goals and preferences\n    2. Recommend workout routines and exercise plans\n    3. Calculate and explain BMI and other health metrics\n    4. Provide nutrition advice for different fitness goals\n    5. Help with tracking progress and adjusting plans\n    \n    Current conversation:\n    {history}\n    Human: {input}\n    AI Assistant:"), llm=OpenRouterLLM(api_key='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', headers={'Authorization': 'Bearer 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', 'Content-Type': 'application/json', 'HTTP-Referer': 'https://github.com/yourusername/fitness-chatbot', 'X-Title': 'Fitness & Nutrition Assistant'}), output_parser=StrOutputParser(), llm_kwargs={}), 'User Profile:\n        - Weight: 70 kg\n        - Height: 170 cm\n        - Age: 30\n        - Gender: Male\n        - BMI: 24.2 (Normal weight)\n        - Fitness Goal: Weight Loss\n        - Activity Level: Sedentary\n        - Fitness Level: Beginner\n        - Dietary Restrictions: None\n        - Daily Calorie Target: 1441 calories\n        - Macronutrients: 126g protein, 144g carbs, 40g fat\n\n        User Question: hoe gain fat'), kwargs: {}
+2025-04-15 11:37:29,339 - fitness_chatbot - INFO - LLM Request to OpenRouter:
+2025-04-15 11:37:29,339 - fitness_chatbot - INFO - Prompt: User Profile:
+        - Weight: 70 kg
+        - Height: 170 cm
+        - Age: 30
+        - Gender: Male
+        - BMI: 24.2 (Normal weight)
+        - Fitness Goal: Weight Loss
+        - Activity Level...
+2025-04-15 11:37:29,340 - fitness_chatbot - INFO - Response: Error: No response from the model...
+2025-04-15 11:37:29,341 - fitness_chatbot - INFO - Duration: 1.40 seconds
+2025-04-15 11:37:29,341 - fitness_chatbot - INFO - get_ai_response completed in 1.40 seconds
+2025-04-15 11:37:29,342 - fitness_chatbot - INFO - User: hoe gain fat
+2025-04-15 11:37:29,342 - fitness_chatbot - INFO - System: Error: No response from the model...
+2025-04-15 11:39:26,725 - fitness_chatbot - INFO - Calling initialize_llm with args: (), kwargs: {}
+2025-04-15 11:39:26,727 - fitness_chatbot - INFO - initialize_llm completed in 0.00 seconds
+2025-04-15 11:39:26,728 - fitness_chatbot - INFO - Calling create_conversation_chain with args: (OpenRouterLLM(api_key='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', headers={'Authorization': 'Bearer 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', 'Content-Type': 'application/json', 'HTTP-Referer': 'https://github.com/yourusername/fitness-chatbot', 'X-Title': 'Fitness & Nutrition Assistant'}),), kwargs: {}
+2025-04-15 11:39:26,729 - fitness_chatbot - INFO - create_conversation_chain completed in 0.00 seconds
+2025-04-15 11:39:26,734 - fitness_chatbot - INFO - BMI Calculation - Weight: 70kg, Height: 170cm
+2025-04-15 11:39:26,735 - fitness_chatbot - INFO - BMI: 24.22, Category: Normal weight
+2025-04-15 11:39:26,735 - fitness_chatbot - INFO - Macro Calculation - TDEE: 1941, Goal: Weight Loss
+2025-04-15 11:39:26,735 - fitness_chatbot - INFO - Macros: {'calories': 1441, 'protein': 126, 'fat': 40, 'carbs': 144}
+2025-04-15 11:39:32,206 - fitness_chatbot - INFO - BMI Calculation - Weight: 70kg, Height: 170cm
+2025-04-15 11:39:32,207 - fitness_chatbot - INFO - BMI: 24.22, Category: Normal weight
+2025-04-15 11:39:32,208 - fitness_chatbot - INFO - Macro Calculation - TDEE: 1941, Goal: Weight Loss
+2025-04-15 11:39:32,209 - fitness_chatbot - INFO - Macros: {'calories': 1441, 'protein': 126, 'fat': 40, 'carbs': 144}
+2025-04-15 11:39:32,226 - fitness_chatbot - INFO - Calling generate_meal_plan with args: ('Weight Loss', 'Sedentary', []), kwargs: {}
+2025-04-15 11:39:32,227 - fitness_chatbot - INFO - generate_meal_plan completed in 0.00 seconds
+2025-04-15 11:39:32,228 - fitness_chatbot - INFO - Calling get_ai_response with args: (ConversationChain(memory=ConversationBufferMemory(chat_memory=InMemoryChatMessageHistory(messages=[]), return_messages=True), verbose=True, prompt=PromptTemplate(input_variables=['history', 'input'], input_types={}, partial_variables={}, template="You are an expert fitness and nutrition coach. You provide personalized advice based on users' goals, \n    current fitness level, and preferences. Always give specific, actionable advice and maintain a supportive, \n    encouraging tone.\n    \n    You can:\n    1. Suggest meal plans based on user's goals and preferences\n    2. Recommend workout routines and exercise plans\n    3. Calculate and explain BMI and other health metrics\n    4. Provide nutrition advice for different fitness goals\n    5. Help with tracking progress and adjusting plans\n    \n    Current conversation:\n    {history}\n    Human: {input}\n    AI Assistant:"), llm=OpenRouterLLM(api_key='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', headers={'Authorization': 'Bearer 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', 'Content-Type': 'application/json', 'HTTP-Referer': 'https://github.com/yourusername/fitness-chatbot', 'X-Title': 'Fitness & Nutrition Assistant'}), output_parser=StrOutputParser(), llm_kwargs={}), 'Generate a 7-day meal plan for someone with the following profile:\n    - Fitness Goal: Weight Loss\n    - Activity Level: Sedentary\n    - Dietary Restrictions: []\n    \n    Include breakfast, lunch, dinner, and snacks. For each meal, provide:\n    1. Ingredients and portions\n    2. Approximate calories and macronutrients\n    3. Preparation instructions\n    4. Nutritional benefits\n    \n    Format the response as a structured meal plan with clear sections for each day.'), kwargs: {}
+2025-04-15 11:39:33,449 - fitness_chatbot - INFO - LLM Request to OpenRouter:
+2025-04-15 11:39:33,450 - fitness_chatbot - INFO - Prompt: Generate a 7-day meal plan for someone with the following profile:
+    - Fitness Goal: Weight Loss
+    - Activity Level: Sedentary
+    - Dietary Restrictions: []
+    
+    Include breakfast, lunch, din...
+2025-04-15 11:39:33,451 - fitness_chatbot - INFO - Response: Error: No response from the model...
+2025-04-15 11:39:33,451 - fitness_chatbot - INFO - Duration: 1.22 seconds
+2025-04-15 11:39:33,452 - fitness_chatbot - INFO - get_ai_response completed in 1.22 seconds
+2025-04-15 11:39:53,037 - fitness_chatbot - INFO - BMI Calculation - Weight: 70kg, Height: 170cm
+2025-04-15 11:39:53,037 - fitness_chatbot - INFO - BMI: 24.22, Category: Normal weight
+2025-04-15 11:39:53,039 - fitness_chatbot - INFO - Macro Calculation - TDEE: 1941, Goal: Weight Loss
+2025-04-15 11:39:53,040 - fitness_chatbot - INFO - Macros: {'calories': 1441, 'protein': 126, 'fat': 40, 'carbs': 144}
+2025-04-15 11:39:53,066 - fitness_chatbot - INFO - Calling get_ai_response with args: (ConversationChain(memory=ConversationBufferMemory(chat_memory=InMemoryChatMessageHistory(messages=[HumanMessage(content='Generate a 7-day meal plan for someone with the following profile:\n    - Fitness Goal: Weight Loss\n    - Activity Level: Sedentary\n    - Dietary Restrictions: []\n    \n    Include breakfast, lunch, dinner, and snacks. For each meal, provide:\n    1. Ingredients and portions\n    2. Approximate calories and macronutrients\n    3. Preparation instructions\n    4. Nutritional benefits\n    \n    Format the response as a structured meal plan with clear sections for each day.', additional_kwargs={}, response_metadata={}), AIMessage(content='Error: No response from the model', additional_kwargs={}, response_metadata={})]), return_messages=True), verbose=True, prompt=PromptTemplate(input_variables=['history', 'input'], input_types={}, partial_variables={}, template="You are an expert fitness and nutrition coach. You provide personalized advice based on users' goals, \n    current fitness level, and preferences. Always give specific, actionable advice and maintain a supportive, \n    encouraging tone.\n    \n    You can:\n    1. Suggest meal plans based on user's goals and preferences\n    2. Recommend workout routines and exercise plans\n    3. Calculate and explain BMI and other health metrics\n    4. Provide nutrition advice for different fitness goals\n    5. Help with tracking progress and adjusting plans\n    \n    Current conversation:\n    {history}\n    Human: {input}\n    AI Assistant:"), llm=OpenRouterLLM(api_key='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', headers={'Authorization': 'Bearer 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', 'Content-Type': 'application/json', 'HTTP-Referer': 'https://github.com/yourusername/fitness-chatbot', 'X-Title': 'Fitness & Nutrition Assistant'}), output_parser=StrOutputParser(), llm_kwargs={}), 'suggest me some meal plan based on my bmi'), kwargs: {}
+2025-04-15 11:39:54,266 - fitness_chatbot - INFO - LLM Request to OpenRouter:
+2025-04-15 11:39:54,266 - fitness_chatbot - INFO - Prompt: suggest me some meal plan based on my bmi...
+2025-04-15 11:39:54,267 - fitness_chatbot - INFO - Response: Error: No response from the model...
+2025-04-15 11:39:54,267 - fitness_chatbot - INFO - Duration: 1.20 seconds
+2025-04-15 11:39:54,267 - fitness_chatbot - INFO - get_ai_response completed in 1.20 seconds
+2025-04-15 11:45:29,004 - fitness_chatbot - INFO - BMI Calculation - Weight: 70kg, Height: 170cm
+2025-04-15 11:45:29,005 - fitness_chatbot - INFO - BMI: 24.22, Category: Normal weight
+2025-04-15 11:45:29,005 - fitness_chatbot - INFO - Macro Calculation - TDEE: 1742, Goal: Weight Loss
+2025-04-15 11:45:29,006 - fitness_chatbot - INFO - Macros: {'calories': 1242, 'protein': 109, 'fat': 34, 'carbs': 124}
+2025-04-15 11:45:30,143 - fitness_chatbot - INFO - BMI Calculation - Weight: 70kg, Height: 170cm
+2025-04-15 11:45:30,143 - fitness_chatbot - INFO - BMI: 24.22, Category: Normal weight
+2025-04-15 11:45:30,145 - fitness_chatbot - INFO - Macro Calculation - TDEE: 1941, Goal: Weight Loss
+2025-04-15 11:45:30,146 - fitness_chatbot - INFO - Macros: {'calories': 1441, 'protein': 126, 'fat': 40, 'carbs': 144}
+2025-04-15 11:47:54,184 - fitness_chatbot - INFO - Calling initialize_llm with args: (), kwargs: {}
+2025-04-15 11:47:54,185 - fitness_chatbot - INFO - initialize_llm completed in 0.00 seconds
+2025-04-15 11:47:54,186 - fitness_chatbot - INFO - Calling create_conversation_chain with args: (OpenRouterLLM(api_key='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', headers={'Authorization': 'Bearer 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', 'Content-Type': 'application/json', 'HTTP-Referer': 'https://github.com/yourusername/fitness-chatbot', 'X-Title': 'Fitness & Nutrition Assistant'}),), kwargs: {}
+2025-04-15 11:47:54,187 - fitness_chatbot - INFO - create_conversation_chain completed in 0.00 seconds
+2025-04-15 11:47:54,191 - fitness_chatbot - INFO - BMI Calculation - Weight: 70kg, Height: 170cm
+2025-04-15 11:47:54,191 - fitness_chatbot - INFO - BMI: 24.22, Category: Normal weight
+2025-04-15 11:47:54,191 - fitness_chatbot - INFO - Macro Calculation - TDEE: 1941, Goal: Weight Loss
+2025-04-15 11:47:54,191 - fitness_chatbot - INFO - Macros: {'calories': 1441, 'protein': 126, 'fat': 40, 'carbs': 144}
+2025-04-15 11:48:09,337 - fitness_chatbot - INFO - BMI Calculation - Weight: 70kg, Height: 170cm
+2025-04-15 11:48:09,337 - fitness_chatbot - INFO - BMI: 24.22, Category: Normal weight
+2025-04-15 11:48:09,338 - fitness_chatbot - INFO - Macro Calculation - TDEE: 1941, Goal: Weight Loss
+2025-04-15 11:48:09,339 - fitness_chatbot - INFO - Macros: {'calories': 1441, 'protein': 126, 'fat': 40, 'carbs': 144}
+2025-04-15 11:48:09,362 - fitness_chatbot - INFO - Calling get_ai_response with args: (ConversationChain(memory=ConversationBufferMemory(chat_memory=InMemoryChatMessageHistory(messages=[]), return_messages=True), verbose=True, prompt=PromptTemplate(input_variables=['history', 'input'], input_types={}, partial_variables={}, template="You are an expert fitness and nutrition coach. You provide personalized advice based on users' goals, \n    current fitness level, and preferences. Always give specific, actionable advice and maintain a supportive, \n    encouraging tone.\n    \n    You can:\n    1. Suggest meal plans based on user's goals and preferences\n    2. Recommend workout routines and exercise plans\n    3. Calculate and explain BMI and other health metrics\n    4. Provide nutrition advice for different fitness goals\n    5. Help with tracking progress and adjusting plans\n    \n    Current conversation:\n    {history}\n    Human: {input}\n    AI Assistant:"), llm=OpenRouterLLM(api_key='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', headers={'Authorization': 'Bearer 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', 'Content-Type': 'application/json', 'HTTP-Referer': 'https://github.com/yourusername/fitness-chatbot', 'X-Title': 'Fitness & Nutrition Assistant'}), output_parser=StrOutputParser(), llm_kwargs={}), 'suggest me meal plan'), kwargs: {}
+2025-04-15 11:48:10,939 - fitness_chatbot - INFO - LLM Request to OpenRouter:
+2025-04-15 11:48:10,939 - fitness_chatbot - INFO - Prompt: suggest me meal plan...
+2025-04-15 11:48:10,940 - fitness_chatbot - INFO - Response: Error: No response from the model...
+2025-04-15 11:48:10,940 - fitness_chatbot - INFO - Duration: 1.58 seconds
+2025-04-15 11:48:10,941 - fitness_chatbot - INFO - get_ai_response completed in 1.58 seconds
+2025-04-15 11:48:36,669 - fitness_chatbot - INFO - BMI Calculation - Weight: 71kg, Height: 170cm
+2025-04-15 11:48:36,669 - fitness_chatbot - INFO - BMI: 24.57, Category: Normal weight
+2025-04-15 11:48:36,669 - fitness_chatbot - INFO - Macro Calculation - TDEE: 1953, Goal: Weight Loss
+2025-04-15 11:48:36,669 - fitness_chatbot - INFO - Macros: {'calories': 1453, 'protein': 127, 'fat': 40, 'carbs': 145}
+2025-04-15 11:48:36,856 - fitness_chatbot - INFO - BMI Calculation - Weight: 72kg, Height: 170cm
+2025-04-15 11:48:36,856 - fitness_chatbot - INFO - BMI: 24.91, Category: Normal weight
+2025-04-15 11:48:36,857 - fitness_chatbot - INFO - Macro Calculation - TDEE: 1965, Goal: Weight Loss
+2025-04-15 11:48:36,857 - fitness_chatbot - INFO - Macros: {'calories': 1465, 'protein': 128, 'fat': 41, 'carbs': 146}
+2025-04-15 11:48:37,038 - fitness_chatbot - INFO - BMI Calculation - Weight: 73kg, Height: 170cm
+2025-04-15 11:48:37,039 - fitness_chatbot - INFO - BMI: 25.26, Category: Overweight
+2025-04-15 11:48:37,039 - fitness_chatbot - INFO - Macro Calculation - TDEE: 1977, Goal: Weight Loss
+2025-04-15 11:48:37,040 - fitness_chatbot - INFO - Macros: {'calories': 1477, 'protein': 129, 'fat': 41, 'carbs': 148}
+2025-04-15 11:48:37,227 - fitness_chatbot - INFO - BMI Calculation - Weight: 74kg, Height: 170cm
+2025-04-15 11:48:37,228 - fitness_chatbot - INFO - BMI: 25.61, Category: Overweight
+2025-04-15 11:48:37,229 - fitness_chatbot - INFO - Macro Calculation - TDEE: 1989, Goal: Weight Loss
+2025-04-15 11:48:37,230 - fitness_chatbot - INFO - Macros: {'calories': 1489, 'protein': 130, 'fat': 41, 'carbs': 149}
+2025-04-15 11:48:37,455 - fitness_chatbot - INFO - BMI Calculation - Weight: 75kg, Height: 170cm
+2025-04-15 11:48:37,455 - fitness_chatbot - INFO - BMI: 25.95, Category: Overweight
+2025-04-15 11:48:37,456 - fitness_chatbot - INFO - Macro Calculation - TDEE: 2001, Goal: Weight Loss
+2025-04-15 11:48:37,456 - fitness_chatbot - INFO - Macros: {'calories': 1501, 'protein': 131, 'fat': 42, 'carbs': 150}
+2025-04-15 11:48:49,533 - fitness_chatbot - INFO - BMI Calculation - Weight: 76kg, Height: 170cm
+2025-04-15 11:48:49,534 - fitness_chatbot - INFO - BMI: 26.30, Category: Overweight
+2025-04-15 11:48:49,534 - fitness_chatbot - INFO - Macro Calculation - TDEE: 2013, Goal: Weight Loss
+2025-04-15 11:48:49,535 - fitness_chatbot - INFO - Macros: {'calories': 1513, 'protein': 132, 'fat': 42, 'carbs': 151}
+2025-04-15 11:49:05,093 - fitness_chatbot - INFO - BMI Calculation - Weight: 76kg, Height: 170cm
+2025-04-15 11:49:05,094 - fitness_chatbot - INFO - BMI: 26.30, Category: Overweight
+2025-04-15 11:49:05,095 - fitness_chatbot - INFO - Macro Calculation - TDEE: 2019, Goal: Weight Loss
+2025-04-15 11:49:05,096 - fitness_chatbot - INFO - Macros: {'calories': 1519, 'protein': 133, 'fat': 42, 'carbs': 152}
+2025-04-15 11:49:05,315 - fitness_chatbot - INFO - BMI Calculation - Weight: 76kg, Height: 170cm
+2025-04-15 11:49:05,316 - fitness_chatbot - INFO - BMI: 26.30, Category: Overweight
+2025-04-15 11:49:05,317 - fitness_chatbot - INFO - Macro Calculation - TDEE: 2025, Goal: Weight Loss
+2025-04-15 11:49:05,319 - fitness_chatbot - INFO - Macros: {'calories': 1525, 'protein': 133, 'fat': 42, 'carbs': 152}
+2025-04-15 11:49:05,680 - fitness_chatbot - INFO - BMI Calculation - Weight: 76kg, Height: 170cm
+2025-04-15 11:49:05,680 - fitness_chatbot - INFO - BMI: 26.30, Category: Overweight
+2025-04-15 11:49:05,682 - fitness_chatbot - INFO - Macro Calculation - TDEE: 2031, Goal: Weight Loss
+2025-04-15 11:49:05,682 - fitness_chatbot - INFO - Macros: {'calories': 1531, 'protein': 134, 'fat': 43, 'carbs': 153}
+2025-04-15 11:49:05,879 - fitness_chatbot - INFO - BMI Calculation - Weight: 76kg, Height: 170cm
+2025-04-15 11:49:05,880 - fitness_chatbot - INFO - BMI: 26.30, Category: Overweight
+2025-04-15 11:49:05,880 - fitness_chatbot - INFO - Macro Calculation - TDEE: 2037, Goal: Weight Loss
+2025-04-15 11:49:05,881 - fitness_chatbot - INFO - Macros: {'calories': 1537, 'protein': 134, 'fat': 43, 'carbs': 154}
+2025-04-15 11:49:06,089 - fitness_chatbot - INFO - BMI Calculation - Weight: 76kg, Height: 170cm
+2025-04-15 11:49:06,090 - fitness_chatbot - INFO - BMI: 26.30, Category: Overweight
+2025-04-15 11:49:06,091 - fitness_chatbot - INFO - Macro Calculation - TDEE: 2043, Goal: Weight Loss
+2025-04-15 11:49:06,092 - fitness_chatbot - INFO - Macros: {'calories': 1543, 'protein': 135, 'fat': 43, 'carbs': 154}
+2025-04-15 11:49:06,567 - fitness_chatbot - INFO - BMI Calculation - Weight: 76kg, Height: 170cm
+2025-04-15 11:49:06,570 - fitness_chatbot - INFO - BMI: 26.30, Category: Overweight
+2025-04-15 11:49:06,573 - fitness_chatbot - INFO - Macro Calculation - TDEE: 2049, Goal: Weight Loss
+2025-04-15 11:49:06,573 - fitness_chatbot - INFO - Macros: {'calories': 1549, 'protein': 136, 'fat': 43, 'carbs': 155}
+2025-04-15 11:49:17,210 - fitness_chatbot - INFO - BMI Calculation - Weight: 76kg, Height: 171cm
+2025-04-15 11:49:17,211 - fitness_chatbot - INFO - BMI: 25.99, Category: Overweight
+2025-04-15 11:49:17,212 - fitness_chatbot - INFO - Macro Calculation - TDEE: 2056, Goal: Weight Loss
+2025-04-15 11:49:17,212 - fitness_chatbot - INFO - Macros: {'calories': 1556, 'protein': 136, 'fat': 43, 'carbs': 156}
+2025-04-15 11:49:17,878 - fitness_chatbot - INFO - BMI Calculation - Weight: 76kg, Height: 172cm
+2025-04-15 11:49:17,879 - fitness_chatbot - INFO - BMI: 25.69, Category: Overweight
+2025-04-15 11:49:17,879 - fitness_chatbot - INFO - Macro Calculation - TDEE: 2064, Goal: Weight Loss
+2025-04-15 11:49:17,880 - fitness_chatbot - INFO - Macros: {'calories': 1564, 'protein': 137, 'fat': 43, 'carbs': 156}
+2025-04-15 11:49:38,390 - fitness_chatbot - INFO - BMI Calculation - Weight: 76kg, Height: 172cm
+2025-04-15 11:49:38,391 - fitness_chatbot - INFO - BMI: 25.69, Category: Overweight
+2025-04-15 11:49:38,392 - fitness_chatbot - INFO - Macro Calculation - TDEE: 2064, Goal: Weight Loss
+2025-04-15 11:49:38,392 - fitness_chatbot - INFO - Macros: {'calories': 1564, 'protein': 137, 'fat': 43, 'carbs': 156}
+2025-04-15 11:49:38,410 - fitness_chatbot - INFO - Calling generate_meal_plan with args: ('Weight Loss', 'Sedentary', []), kwargs: {}
+2025-04-15 11:49:38,410 - fitness_chatbot - INFO - generate_meal_plan completed in 0.00 seconds
+2025-04-15 11:49:38,412 - fitness_chatbot - INFO - Calling get_ai_response with args: (ConversationChain(memory=ConversationBufferMemory(chat_memory=InMemoryChatMessageHistory(messages=[HumanMessage(content='suggest me meal plan', additional_kwargs={}, response_metadata={}), AIMessage(content='Error: No response from the model', additional_kwargs={}, response_metadata={})]), return_messages=True), verbose=True, prompt=PromptTemplate(input_variables=['history', 'input'], input_types={}, partial_variables={}, template="You are an expert fitness and nutrition coach. You provide personalized advice based on users' goals, \n    current fitness level, and preferences. Always give specific, actionable advice and maintain a supportive, \n    encouraging tone.\n    \n    You can:\n    1. Suggest meal plans based on user's goals and preferences\n    2. Recommend workout routines and exercise plans\n    3. Calculate and explain BMI and other health metrics\n    4. Provide nutrition advice for different fitness goals\n    5. Help with tracking progress and adjusting plans\n    \n    Current conversation:\n    {history}\n    Human: {input}\n    AI Assistant:"), llm=OpenRouterLLM(api_key='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', headers={'Authorization': 'Bearer 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', 'Content-Type': 'application/json', 'HTTP-Referer': 'https://github.com/yourusername/fitness-chatbot', 'X-Title': 'Fitness & Nutrition Assistant'}), output_parser=StrOutputParser(), llm_kwargs={}), 'Generate a 7-day meal plan for someone with the following profile:\n    - Fitness Goal: Weight Loss\n    - Activity Level: Sedentary\n    - Dietary Restrictions: []\n    \n    Include breakfast, lunch, dinner, and snacks. For each meal, provide:\n    1. Ingredients and portions\n    2. Approximate calories and macronutrients\n    3. Preparation instructions\n    4. Nutritional benefits\n    \n    Format the response as a structured meal plan with clear sections for each day.'), kwargs: {}
+2025-04-15 11:49:39,998 - fitness_chatbot - INFO - LLM Request to OpenRouter:
+2025-04-15 11:49:39,998 - fitness_chatbot - INFO - Prompt: Generate a 7-day meal plan for someone with the following profile:
+    - Fitness Goal: Weight Loss
+    - Activity Level: Sedentary
+    - Dietary Restrictions: []
+    
+    Include breakfast, lunch, din...
+2025-04-15 11:49:39,999 - fitness_chatbot - INFO - Response: Error: No response from the model...
+2025-04-15 11:49:40,000 - fitness_chatbot - INFO - Duration: 1.58 seconds
+2025-04-15 11:49:40,000 - fitness_chatbot - INFO - get_ai_response completed in 1.59 seconds
+2025-04-15 12:18:08,195 - fitness_chatbot - INFO - Calling initialize_llm with args: (), kwargs: {}
+2025-04-15 12:18:08,198 - fitness_chatbot - INFO - initialize_llm completed in 0.00 seconds
+2025-04-15 12:18:08,199 - fitness_chatbot - INFO - Calling create_conversation_chain with args: (OpenRouterLLM(api_key='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', headers={'Authorization': 'Bearer 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', 'Content-Type': 'application/json', 'HTTP-Referer': 'https://github.com/yourusername/fitness-chatbot', 'X-Title': 'Fitness & Nutrition Assistant'}),), kwargs: {}
+2025-04-15 12:18:08,201 - fitness_chatbot - INFO - create_conversation_chain completed in 0.00 seconds
+2025-04-15 12:21:29,932 - fitness_chatbot - INFO - Calling initialize_llm with args: (), kwargs: {}
+2025-04-15 12:21:29,934 - fitness_chatbot - INFO - initialize_llm completed in 0.00 seconds
+2025-04-15 12:21:29,935 - fitness_chatbot - INFO - Calling create_conversation_chain with args: (OpenRouterLLM(api_key='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', headers={'Authorization': 'Bearer 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', 'Content-Type': 'application/json', 'HTTP-Referer': 'https://github.com/yourusername/fitness-chatbot', 'X-Title': 'Fitness & Nutrition Assistant'}),), kwargs: {}
+2025-04-15 12:21:29,938 - fitness_chatbot - INFO - create_conversation_chain completed in 0.00 seconds
+2025-04-15 12:21:33,319 - fitness_chatbot - INFO - Calling get_ai_response with args: (ConversationChain(memory=ConversationBufferMemory(chat_memory=InMemoryChatMessageHistory(messages=[]), return_messages=True), verbose=True, prompt=PromptTemplate(input_variables=['history', 'input'], input_types={}, partial_variables={}, template="You are an expert fitness and nutrition coach. You provide personalized advice based on users' goals, \n    current fitness level, and preferences. Always give specific, actionable advice and maintain a supportive, \n    encouraging tone.\n    \n    You can:\n    1. Suggest meal plans based on user's goals and preferences\n    2. Recommend workout routines and exercise plans\n    3. Calculate and explain BMI and other health metrics\n    4. Provide nutrition advice for different fitness goals\n    5. Help with tracking progress and adjusting plans\n    \n    Current conversation:\n    {history}\n    Human: {input}\n    AI Assistant:"), llm=OpenRouterLLM(api_key='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', headers={'Authorization': 'Bearer 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', 'Content-Type': 'application/json', 'HTTP-Referer': 'https://github.com/yourusername/fitness-chatbot', 'X-Title': 'Fitness & Nutrition Assistant'}), output_parser=StrOutputParser(), llm_kwargs={}), 'hi'), kwargs: {}
+2025-04-15 12:21:35,327 - fitness_chatbot - INFO - LLM Request to OpenRouter:
+2025-04-15 12:21:35,328 - fitness_chatbot - INFO - Prompt: hi...
+2025-04-15 12:21:35,328 - fitness_chatbot - INFO - Response: Error: Unexpected response format from the model...
+2025-04-15 12:21:35,329 - fitness_chatbot - INFO - Duration: 2.01 seconds
+2025-04-15 12:21:35,330 - fitness_chatbot - INFO - get_ai_response completed in 2.02 seconds
+2025-04-15 12:22:24,746 - fitness_chatbot - INFO - Calling initialize_llm with args: (), kwargs: {}
+2025-04-15 12:22:24,748 - fitness_chatbot - INFO - initialize_llm completed in 0.00 seconds
+2025-04-15 12:22:24,749 - fitness_chatbot - INFO - Calling create_conversation_chain with args: (OpenRouterLLM(api_key='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', headers={'Authorization': 'Bearer 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', 'Content-Type': 'application/json', 'HTTP-Referer': 'https://github.com/yourusername/fitness-chatbot', 'X-Title': 'Fitness & Nutrition Assistant'}),), kwargs: {}
+2025-04-15 12:22:24,751 - fitness_chatbot - INFO - create_conversation_chain completed in 0.00 seconds
+2025-04-15 12:22:35,364 - fitness_chatbot - INFO - Calling get_ai_response with args: (ConversationChain(memory=ConversationBufferMemory(chat_memory=InMemoryChatMessageHistory(messages=[]), return_messages=True), verbose=True, prompt=PromptTemplate(input_variables=['history', 'input'], input_types={}, partial_variables={}, template="You are an expert fitness and nutrition coach. You provide personalized advice based on users' goals, \n    current fitness level, and preferences. Always give specific, actionable advice and maintain a supportive, \n    encouraging tone.\n    \n    You can:\n    1. Suggest meal plans based on user's goals and preferences\n    2. Recommend workout routines and exercise plans\n    3. Calculate and explain BMI and other health metrics\n    4. Provide nutrition advice for different fitness goals\n    5. Help with tracking progress and adjusting plans\n    \n    Current conversation:\n    {history}\n    Human: {input}\n    AI Assistant:"), llm=OpenRouterLLM(api_key='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', headers={'Authorization': 'Bearer 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', 'Content-Type': 'application/json', 'HTTP-Referer': 'https://github.com/yourusername/fitness-chatbot', 'X-Title': 'Fitness & Nutrition Assistant'}), output_parser=StrOutputParser(), llm_kwargs={}), 'What can you do?'), kwargs: {}
+2025-04-15 12:22:37,179 - fitness_chatbot - INFO - LLM Request to OpenRouter:
+2025-04-15 12:22:37,179 - fitness_chatbot - INFO - Prompt: What can you do?...
+2025-04-15 12:22:37,180 - fitness_chatbot - INFO - Response: Error: {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 1000 tokens, but can only afford 533. To increase, visit https://openrouter.ai/settings/credits and upg...
+2025-04-15 12:22:37,181 - fitness_chatbot - INFO - Duration: 1.81 seconds
+2025-04-15 12:22:37,182 - fitness_chatbot - INFO - get_ai_response completed in 1.82 seconds
+2025-04-15 12:24:36,534 - fitness_chatbot - INFO - Calling initialize_llm with args: (), kwargs: {}
+2025-04-15 12:24:36,537 - fitness_chatbot - INFO - initialize_llm completed in 0.00 seconds
+2025-04-15 12:24:36,538 - fitness_chatbot - INFO - Calling create_conversation_chain with args: (OpenRouterLLM(model_name='anthropic/claude-3-opus-20240229', api_key='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', headers={'Authorization': 'Bearer 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', 'Content-Type': 'application/json', 'HTTP-Referer': 'https://github.com/yourusername/fitness-chatbot', 'X-Title': 'Fitness & Nutrition Assistant'}),), kwargs: {}
+2025-04-15 12:24:36,540 - fitness_chatbot - INFO - create_conversation_chain completed in 0.00 seconds
+2025-04-15 12:24:44,975 - fitness_chatbot - INFO - Calling get_ai_response with args: (ConversationChain(memory=ConversationBufferMemory(chat_memory=InMemoryChatMessageHistory(messages=[]), return_messages=True), verbose=True, prompt=PromptTemplate(input_variables=['history', 'input'], input_types={}, partial_variables={}, template="You are an expert fitness and nutrition coach. You provide personalized advice based on users' goals, \n    current fitness level, and preferences. Always give specific, actionable advice and maintain a supportive, \n    encouraging tone.\n    \n    You can:\n    1. Suggest meal plans based on user's goals and preferences\n    2. Recommend workout routines and exercise plans\n    3. Calculate and explain BMI and other health metrics\n    4. Provide nutrition advice for different fitness goals\n    5. Help with tracking progress and adjusting plans\n    \n    Current conversation:\n    {history}\n    Human: {input}\n    AI Assistant:"), llm=OpenRouterLLM(model_name='anthropic/claude-3-opus-20240229', api_key='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', headers={'Authorization': 'Bearer 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', 'Content-Type': 'application/json', 'HTTP-Referer': 'https://github.com/yourusername/fitness-chatbot', 'X-Title': 'Fitness & Nutrition Assistant'}), output_parser=StrOutputParser(), llm_kwargs={}), 'What Can you do'), kwargs: {}
+2025-04-15 12:24:46,156 - fitness_chatbot - INFO - LLM Request to OpenRouter:
+2025-04-15 12:24:46,157 - fitness_chatbot - INFO - Prompt: What Can you do...
+2025-04-15 12:24:46,157 - fitness_chatbot - INFO - Response: Error: {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 1000 tokens, but can only afford 533. To increase, visit https://openrouter.ai/settings/credits and upg...
+2025-04-15 12:24:46,158 - fitness_chatbot - INFO - Duration: 1.18 seconds
+2025-04-15 12:24:46,159 - fitness_chatbot - INFO - get_ai_response completed in 1.18 seconds
+2025-04-15 12:25:01,849 - fitness_chatbot - INFO - Calling get_ai_response with args: (ConversationChain(memory=ConversationBufferMemory(chat_memory=InMemoryChatMessageHistory(messages=[HumanMessage(content='What Can you do', additional_kwargs={}, response_metadata={}), AIMessage(content="Error: {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 1000 tokens, but can only afford 533. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': 'Google'}}", additional_kwargs={}, response_metadata={})]), return_messages=True), verbose=True, prompt=PromptTemplate(input_variables=['history', 'input'], input_types={}, partial_variables={}, template="You are an expert fitness and nutrition coach. You provide personalized advice based on users' goals, \n    current fitness level, and preferences. Always give specific, actionable advice and maintain a supportive, \n    encouraging tone.\n    \n    You can:\n    1. Suggest meal plans based on user's goals and preferences\n    2. Recommend workout routines and exercise plans\n    3. Calculate and explain BMI and other health metrics\n    4. Provide nutrition advice for different fitness goals\n    5. Help with tracking progress and adjusting plans\n    \n    Current conversation:\n    {history}\n    Human: {input}\n    AI Assistant:"), llm=OpenRouterLLM(model_name='anthropic/claude-3-opus-20240229', api_key='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', headers={'Authorization': 'Bearer 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', 'Content-Type': 'application/json', 'HTTP-Referer': 'https://github.com/yourusername/fitness-chatbot', 'X-Title': 'Fitness & Nutrition Assistant'}), output_parser=StrOutputParser(), llm_kwargs={}), 'hi'), kwargs: {}
+2025-04-15 12:25:02,977 - fitness_chatbot - INFO - LLM Request to OpenRouter:
+2025-04-15 12:25:02,978 - fitness_chatbot - INFO - Prompt: hi...
+2025-04-15 12:25:02,979 - fitness_chatbot - INFO - Response: Error: {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 1000 tokens, but can only afford 533. To increase, visit https://openrouter.ai/settings/credits and upg...
+2025-04-15 12:25:02,979 - fitness_chatbot - INFO - Duration: 1.13 seconds
+2025-04-15 12:25:02,980 - fitness_chatbot - INFO - get_ai_response completed in 1.13 seconds
+2025-04-15 12:28:45,904 - fitness_chatbot - INFO - Calling initialize_llm with args: (), kwargs: {}
+2025-04-15 12:28:45,907 - fitness_chatbot - INFO - initialize_llm completed in 0.00 seconds
+2025-04-15 12:28:45,908 - fitness_chatbot - INFO - Calling create_conversation_chain with args: (OpenRouterLLM(model_name='anthropic/claude-3-opus-20240229', max_tokens=1000, api_key='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', headers={'Authorization': 'Bearer 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', 'Content-Type': 'application/json', 'HTTP-Referer': 'https://github.com/yourusername/fitness-chatbot', 'X-Title': 'Fitness & Nutrition Assistant'}),), kwargs: {}
+2025-04-15 12:28:45,910 - fitness_chatbot - INFO - create_conversation_chain completed in 0.00 seconds
+2025-04-15 12:28:49,969 - fitness_chatbot - INFO - Calling get_ai_response with args: (ConversationChain(memory=ConversationBufferMemory(chat_memory=InMemoryChatMessageHistory(messages=[]), return_messages=True), verbose=True, prompt=PromptTemplate(input_variables=['history', 'input'], input_types={}, partial_variables={}, template="You are an expert fitness and nutrition coach. You provide personalized advice based on users' goals, \n    current fitness level, and preferences. Always give specific, actionable advice and maintain a supportive, \n    encouraging tone.\n    \n    You can:\n    1. Suggest meal plans based on user's goals and preferences\n    2. Recommend workout routines and exercise plans\n    3. Calculate and explain BMI and other health metrics\n    4. Provide nutrition advice for different fitness goals\n    5. Help with tracking progress and adjusting plans\n    \n    Current conversation:\n    {history}\n    Human: {input}\n    AI Assistant:"), llm=OpenRouterLLM(model_name='anthropic/claude-3-opus-20240229', max_tokens=1000, api_key='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', headers={'Authorization': 'Bearer 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', 'Content-Type': 'application/json', 'HTTP-Referer': 'https://github.com/yourusername/fitness-chatbot', 'X-Title': 'Fitness & Nutrition Assistant'}), output_parser=StrOutputParser(), llm_kwargs={}), 'hi'), kwargs: {}
+2025-04-15 12:28:51,171 - fitness_chatbot - INFO - LLM Request to OpenRouter:
+2025-04-15 12:28:51,171 - fitness_chatbot - INFO - Prompt: hi...
+2025-04-15 12:28:51,172 - fitness_chatbot - INFO - Response: Error: {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 1000 tokens, but can only afford 533. To increase, visit https://openrouter.ai/settings/credits and upg...
+2025-04-15 12:28:51,173 - fitness_chatbot - INFO - Duration: 1.20 seconds
+2025-04-15 12:28:51,173 - fitness_chatbot - INFO - get_ai_response completed in 1.20 seconds
+2025-04-15 12:30:21,991 - fitness_chatbot - INFO - Calling initialize_llm with args: (), kwargs: {}
+2025-04-15 12:30:21,993 - fitness_chatbot - INFO - initialize_llm completed in 0.00 seconds
+2025-04-15 12:30:21,994 - fitness_chatbot - INFO - Calling create_conversation_chain with args: (OpenRouterLLM(model_name='anthropic/claude-3-opus-20240229', max_tokens=1000, api_key='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', headers={'Authorization': 'Bearer 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', 'Content-Type': 'application/json', 'HTTP-Referer': 'https://github.com/yourusername/fitness-chatbot', 'X-Title': 'Fitness & Nutrition Assistant'}),), kwargs: {}
+2025-04-15 12:30:21,997 - fitness_chatbot - INFO - create_conversation_chain completed in 0.00 seconds
+2025-04-15 12:30:25,153 - fitness_chatbot - INFO - Calling get_ai_response with args: (ConversationChain(memory=ConversationBufferMemory(chat_memory=InMemoryChatMessageHistory(messages=[]), return_messages=True), verbose=True, prompt=PromptTemplate(input_variables=['history', 'input'], input_types={}, partial_variables={}, template="You are an expert fitness and nutrition coach. You provide personalized advice based on users' goals, \n    current fitness level, and preferences. Always give specific, actionable advice and maintain a supportive, \n    encouraging tone.\n    \n    You can:\n    1. Suggest meal plans based on user's goals and preferences\n    2. Recommend workout routines and exercise plans\n    3. Calculate and explain BMI and other health metrics\n    4. Provide nutrition advice for different fitness goals\n    5. Help with tracking progress and adjusting plans\n    \n    Current conversation:\n    {history}\n    Human: {input}\n    AI Assistant:"), llm=OpenRouterLLM(model_name='anthropic/claude-3-opus-20240229', max_tokens=1000, api_key='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', headers={'Authorization': 'Bearer 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', 'Content-Type': 'application/json', 'HTTP-Referer': 'https://github.com/yourusername/fitness-chatbot', 'X-Title': 'Fitness & Nutrition Assistant'}), output_parser=StrOutputParser(), llm_kwargs={}), 'hi'), kwargs: {}
+2025-04-15 12:30:26,357 - fitness_chatbot - INFO - LLM Request to OpenRouter:
+2025-04-15 12:30:26,358 - fitness_chatbot - INFO - Prompt: hi...
+2025-04-15 12:30:26,359 - fitness_chatbot - INFO - Response: Error: Insufficient credits. Please visit https://openrouter.ai/settings/credits to upgrade your account....
+2025-04-15 12:30:26,360 - fitness_chatbot - INFO - Duration: 1.20 seconds
+2025-04-15 12:30:26,360 - fitness_chatbot - INFO - get_ai_response completed in 1.21 seconds
+2025-04-15 12:31:10,502 - fitness_chatbot - INFO - Calling initialize_llm with args: (), kwargs: {}
+2025-04-15 12:31:10,504 - fitness_chatbot - INFO - initialize_llm completed in 0.00 seconds
+2025-04-15 12:31:10,505 - fitness_chatbot - INFO - Calling create_conversation_chain with args: (OpenRouterLLM(model_name='anthropic/claude-3-opus-20240229', max_tokens=1000, api_key='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', headers={'Authorization': 'Bearer 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', 'Content-Type': 'application/json', 'HTTP-Referer': 'https://github.com/yourusername/fitness-chatbot', 'X-Title': 'Fitness & Nutrition Assistant'}),), kwargs: {}
+2025-04-15 12:31:10,506 - fitness_chatbot - INFO - create_conversation_chain completed in 0.00 seconds
+2025-04-15 12:31:14,163 - fitness_chatbot - INFO - Calling get_ai_response with args: (ConversationChain(memory=ConversationBufferMemory(chat_memory=InMemoryChatMessageHistory(messages=[]), return_messages=True), verbose=True, prompt=PromptTemplate(input_variables=['history', 'input'], input_types={}, partial_variables={}, template="You are an expert fitness and nutrition coach. You provide personalized advice based on users' goals, \n    current fitness level, and preferences. Always give specific, actionable advice and maintain a supportive, \n    encouraging tone.\n    \n    You can:\n    1. Suggest meal plans based on user's goals and preferences\n    2. Recommend workout routines and exercise plans\n    3. Calculate and explain BMI and other health metrics\n    4. Provide nutrition advice for different fitness goals\n    5. Help with tracking progress and adjusting plans\n    \n    Current conversation:\n    {history}\n    Human: {input}\n    AI Assistant:"), llm=OpenRouterLLM(model_name='anthropic/claude-3-opus-20240229', max_tokens=1000, api_key='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', headers={'Authorization': 'Bearer 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', 'Content-Type': 'application/json', 'HTTP-Referer': 'https://github.com/yourusername/fitness-chatbot', 'X-Title': 'Fitness & Nutrition Assistant'}), output_parser=StrOutputParser(), llm_kwargs={}), 'hi'), kwargs: {}
+2025-04-15 12:31:15,299 - fitness_chatbot - INFO - LLM Request to OpenRouter:
+2025-04-15 12:31:15,300 - fitness_chatbot - INFO - Prompt: hi...
+2025-04-15 12:31:15,300 - fitness_chatbot - INFO - Response: Error: Insufficient credits. Please visit https://openrouter.ai/settings/credits to upgrade your account....
+2025-04-15 12:31:15,301 - fitness_chatbot - INFO - Duration: 1.13 seconds
+2025-04-15 12:31:15,301 - fitness_chatbot - INFO - get_ai_response completed in 1.14 seconds
+2025-04-15 12:38:25,623 - fitness_chatbot - INFO - Calling initialize_llm with args: (), kwargs: {}
+2025-04-15 12:38:25,910 - fitness_chatbot - ERROR - Error in initialize_llm: "OpenRouterLLM" object has no field "client"
+2025-04-15 12:38:25,917 - fitness_chatbot - ERROR - Traceback (most recent call last):
+  File "D:\Projects\app.py", line 28, in initialize_llm
+    llm = OpenRouterLLM(
+        model_name="anthropic/claude-3-opus-20240229",
+        temperature=0.7,
+        max_tokens=1000
+    )
+  File "D:\Projects\openrouter_llm.py", line 32, in __init__
+    self.client = OpenAI(
+    ^^^^^^^^^^^
+  File "D:\Projects\venv\Lib\site-packages\pydantic\main.py", line 1000, in __setattr__
+    elif (setattr_handler := self._setattr_handler(name, value)) is not None:
+                             ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\Projects\venv\Lib\site-packages\pydantic\main.py", line 1047, in _setattr_handler
+    raise ValueError(f'"{cls.__name__}" object has no field "{name}"')
+ValueError: "OpenRouterLLM" object has no field "client"
+
+2025-04-15 12:38:25,917 - fitness_chatbot - INFO - initialize_llm completed in 0.29 seconds
+2025-04-15 12:41:19,589 - fitness_chatbot - INFO - Calling initialize_llm with args: (), kwargs: {}
+2025-04-15 12:41:19,869 - fitness_chatbot - ERROR - Error in initialize_llm: "OpenRouterLLM" object has no field "client"
+2025-04-15 12:41:19,870 - fitness_chatbot - ERROR - Traceback (most recent call last):
+  File "D:\Projects\app.py", line 28, in initialize_llm
+    llm = OpenRouterLLM(
+        model_name="anthropic/claude-3-opus-20240229",
+        temperature=0.7,
+        max_tokens=1000
+    )
+  File "D:\Projects\openrouter_llm.py", line 32, in __init__
+    self.client = OpenAI(
+    ^^^^^^^^^^^
+  File "D:\Projects\venv\Lib\site-packages\pydantic\main.py", line 1000, in __setattr__
+    elif (setattr_handler := self._setattr_handler(name, value)) is not None:
+                             ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\Projects\venv\Lib\site-packages\pydantic\main.py", line 1047, in _setattr_handler
+    raise ValueError(f'"{cls.__name__}" object has no field "{name}"')
+ValueError: "OpenRouterLLM" object has no field "client"
+
+2025-04-15 12:41:19,871 - fitness_chatbot - INFO - initialize_llm completed in 0.28 seconds
+2025-04-15 12:42:56,739 - fitness_chatbot - INFO - Calling initialize_llm with args: (), kwargs: {}
+2025-04-15 12:42:57,132 - fitness_chatbot - INFO - initialize_llm completed in 0.39 seconds
+2025-04-15 12:42:57,133 - fitness_chatbot - INFO - Calling create_conversation_chain with args: (OpenRouterLLM(model_name='anthropic/claude-3-opus-20240229', max_tokens=1000, api_key='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', headers={'HTTP-Referer': 'https://github.com/yourusername/fitness-chatbot', 'X-Title': 'Fitness & Nutrition Assistant'}, client=<openai.OpenAI object at 0x000001E8038863C0>),), kwargs: {}
+2025-04-15 12:42:57,139 - fitness_chatbot - INFO - create_conversation_chain completed in 0.01 seconds
+2025-04-15 12:43:01,010 - fitness_chatbot - INFO - Calling get_ai_response with args: (ConversationChain(memory=ConversationBufferMemory(chat_memory=InMemoryChatMessageHistory(messages=[]), return_messages=True), verbose=True, prompt=PromptTemplate(input_variables=['history', 'input'], input_types={}, partial_variables={}, template="You are an expert fitness and nutrition coach. You provide personalized advice based on users' goals, \n    current fitness level, and preferences. Always give specific, actionable advice and maintain a supportive, \n    encouraging tone.\n    \n    You can:\n    1. Suggest meal plans based on user's goals and preferences\n    2. Recommend workout routines and exercise plans\n    3. Calculate and explain BMI and other health metrics\n    4. Provide nutrition advice for different fitness goals\n    5. Help with tracking progress and adjusting plans\n    \n    Current conversation:\n    {history}\n    Human: {input}\n    AI Assistant:"), llm=OpenRouterLLM(model_name='anthropic/claude-3-opus-20240229', max_tokens=1000, api_key='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', headers={'HTTP-Referer': 'https://github.com/yourusername/fitness-chatbot', 'X-Title': 'Fitness & Nutrition Assistant'}, client=<openai.OpenAI object at 0x000001E8038863C0>), output_parser=StrOutputParser(), llm_kwargs={}), 'hi'), kwargs: {}
+2025-04-15 12:43:02,109 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-15 12:43:02,603 - fitness_chatbot - INFO - LLM Request to OpenRouter:
+2025-04-15 12:43:02,603 - fitness_chatbot - INFO - Prompt: hi...
+2025-04-15 12:43:02,603 - fitness_chatbot - INFO - Response: Error: 'NoneType' object is not subscriptable...
+2025-04-15 12:43:02,603 - fitness_chatbot - INFO - Duration: 1.59 seconds
+2025-04-15 12:43:02,603 - fitness_chatbot - INFO - get_ai_response completed in 1.60 seconds
+2025-04-15 12:48:45,506 - fitness_chatbot - INFO - Calling get_ai_response with args: ('hi',), kwargs: {}
+2025-04-15 12:48:46,585 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-04-15 12:48:46,591 - fitness_chatbot - INFO - get_ai_response completed in 1.08 seconds
