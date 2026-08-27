@@ -468,15 +468,19 @@ const styles = StyleSheet.create({
   },
   modalContainer: {
     flex: 1,
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    backgroundColor: 'rgba(0, 0, 0, 0.7)',
+    justifyContent: 'flex-end',
   },
   modalContent: {
     flex: 1,
-    backgroundColor: 'rgba(0, 0, 0, 0.8)',
+    backgroundColor: 'rgba(20, 20, 20, 0.95)',
     marginTop: 60,
     borderTopLeftRadius: 25,
     borderTopRightRadius: 25,
     padding: 20,
+    maxWidth: 700,
+    width: '100%',
+    alignSelf: 'center',
   },
   closeButton: {
     position: 'absolute',

@@ -66,11 +66,19 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#000',
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 20,
   },
   content: {
-    flex: 1,
-    padding: 20,
-    justifyContent: 'center',
+    width: '100%',
+    maxWidth: 440,
+    padding: 28,
+    borderRadius: 24,
+    overflow: 'hidden',
+    backgroundColor: 'rgba(0, 0, 0, 0.7)',
+    borderWidth: 1,
+    borderColor: 'rgba(255, 255, 255, 0.1)',
   },
   title: {
     fontFamily: 'SpaceGrotesk-Bold',

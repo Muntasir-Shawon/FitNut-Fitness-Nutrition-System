@@ -1,10 +1,8 @@
 import { useState } from 'react';
-import { View, Text, ScrollView, TouchableOpacity, StyleSheet, Dimensions } from 'react-native';
+import { View, Text, ScrollView, TouchableOpacity, StyleSheet, useWindowDimensions } from 'react-native';
 import { LineChart } from 'react-native-chart-kit';
 import { BlurView } from 'expo-blur';
 import { TrendingUp, TrendingDown, Scale, Dumbbell, Heart } from 'lucide-react-native';
-
-const screenWidth = Dimensions.get('window').width;
 
 type MetricType = 'Weight' | 'Strength' | 'Cardio';
 
@@ -19,6 +17,8 @@ interface Metric {
 
 export default function ProgressScreen() {
   const [selectedMetric, setSelectedMetric] = useState<MetricType>('Weight');
+  const { width } = useWindowDimensions();
+  const chartWidth = Math.min(width - 40, 600);
 
   const metrics: Metric[] = [
     {
@@ -56,7 +56,7 @@ export default function ProgressScreen() {
   };
 
   return (
-    <ScrollView style={styles.container}>
+    <ScrollView style={styles.container} contentContainerStyle={styles.scrollContent}>
       <View style={styles.header}>
         <Text style={styles.title}>Your Progress</Text>
         <Text style={styles.subtitle}>Track your fitness journey</Text>
@@ -94,14 +94,14 @@ export default function ProgressScreen() {
         })}
       </View>
 
-      <BlurView intensity={80} style={styles.chartContainer}>
+      <BlurView intensity={80} style={[styles.chartContainer, { width: chartWidth, alignSelf: 'center' }]}>
         <Text style={styles.chartTitle}>{currentMetric.title} Progress</Text>
         <LineChart
           data={{
             labels: ['1M', '2M', '3M', '4M', '5M', '6M'],
             datasets: [{ data: currentMetric.data }],
           }}
-          width={screenWidth - 40}
+          width={chartWidth - 40}
           height={220}
           chartConfig={{
             backgroundColor: 'transparent',
@@ -124,7 +124,7 @@ export default function ProgressScreen() {
         />
       </BlurView>
 
-      <View style={styles.statsContainer}>
+      <View style={[styles.statsContainer, { width: chartWidth, alignSelf: 'center' }]}>
         <View style={styles.statCard}>
           <Text style={styles.statLabel}>Starting Point</Text>
           <Text style={styles.statValue}>

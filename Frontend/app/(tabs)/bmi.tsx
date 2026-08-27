@@ -107,6 +107,9 @@ const styles = StyleSheet.create({
   content: {
     padding: 20,
     paddingTop: 60,
+    maxWidth: 600,
+    width: '100%',
+    alignSelf: 'center',
   },
   title: {
     fontFamily: 'SpaceGrotesk-Bold',

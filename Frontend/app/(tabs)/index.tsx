@@ -1,11 +1,12 @@
 import { View, Text, ScrollView, Image, StyleSheet, TouchableOpacity } from 'react-native';
+import { router } from 'expo-router';
 import { BlurView } from 'expo-blur';
-import { MessageSquare } from 'lucide-react-native';
+import { MessageSquare, ChevronRight } from 'lucide-react-native';
 
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
-      <ScrollView style={styles.scrollView}>
+      <ScrollView style={styles.scrollView} contentContainerStyle={styles.scrollContent}>
         <View style={styles.header}>
           <Image
             source={{ uri: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2940&auto=format&fit=crop' }}
@@ -20,28 +21,32 @@ export default function HomeScreen() {
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Today's Recommendations</Text>
           <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.cards}>
-            <View style={styles.card}>
+            <TouchableOpacity style={styles.card} activeOpacity={0.8} onPress={() => router.push('/(tabs)/plan')}>
               <Image
                 source={{ uri: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=2940&auto=format&fit=crop' }}
                 style={styles.cardImage}
               />
               <Text style={styles.cardTitle}>Morning Workout</Text>
               <Text style={styles.cardDescription}>30 min HIIT session</Text>
-            </View>
-            <View style={styles.card}>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.card} activeOpacity={0.8} onPress={() => router.push('/(tabs)/plan')}>
               <Image
                 source={{ uri: 'https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=2940&auto=format&fit=crop' }}
                 style={styles.cardImage}
               />
               <Text style={styles.cardTitle}>Lunch Recipe</Text>
               <Text style={styles.cardDescription}>Protein-rich salad bowl</Text>
-            </View>
+            </TouchableOpacity>
           </ScrollView>
         </View>
 
-        <TouchableOpacity style={styles.chatButton}>
+        <TouchableOpacity 
+          style={styles.chatButton}
+          activeOpacity={0.8}
+          onPress={() => router.push('/(tabs)/plan')}
+        >
           <MessageSquare size={24} color="#fff" />
-          <Text style={styles.chatButtonText}>Ask FitNut AI</Text>
+          <Text style={styles.chatButtonText}>Explore FitNut AI Plans</Text>
         </TouchableOpacity>
       </ScrollView>
     </View>
@@ -56,9 +61,19 @@ const styles = StyleSheet.create({
   scrollView: {
     flex: 1,
   },
+  scrollContent: {
+    maxWidth: 800,
+    width: '100%',
+    alignSelf: 'center',
+    paddingBottom: 30,
+  },
   header: {
     height: 200,
     marginBottom: 20,
+    borderRadius: 20,
+    overflow: 'hidden',
+    marginHorizontal: 15,
+    marginTop: 15,
   },
   headerImage: {
     width: '100%',
@@ -97,7 +112,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
   },
   card: {
-    width: 200,
+    width: 220,
     backgroundColor: '#111',
     borderRadius: 15,
     marginRight: 15,

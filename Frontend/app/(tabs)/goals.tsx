@@ -166,6 +166,9 @@ const styles = StyleSheet.create({
   header: {
     padding: 20,
     paddingTop: 60,
+    maxWidth: 700,
+    width: '100%',
+    alignSelf: 'center',
   },
   title: {
     fontFamily: 'SpaceGrotesk-Bold',
@@ -180,6 +183,9 @@ const styles = StyleSheet.create({
   },
   categoryContainer: {
     marginBottom: 20,
+    maxWidth: 700,
+    width: '100%',
+    alignSelf: 'center',
   },
   categoryContent: {
     paddingHorizontal: 20,
@@ -208,6 +214,9 @@ const styles = StyleSheet.create({
   goalsContainer: {
     padding: 20,
     gap: 15,
+    maxWidth: 700,
+    width: '100%',
+    alignSelf: 'center',
   },
   goalCard: {
     backgroundColor: 'rgba(255, 255, 255, 0.1)',
@@ -286,6 +295,9 @@ const styles = StyleSheet.create({
     padding: 15,
     borderRadius: 12,
     alignItems: 'center',
+    maxWidth: 700,
+    width: 'auto',
+    alignSelf: 'center',
   },
   addButtonText: {
     fontFamily: 'Inter-SemiBold',
