@@ -24,7 +24,8 @@
     },
     "plugins": ["expo-router"],
     "experiments": {
-      "typedRoutes": true
+      "typedRoutes": true,
+      "baseUrl": "/FitNut-Fitness-Nutrition-System"
     }
   }
 }

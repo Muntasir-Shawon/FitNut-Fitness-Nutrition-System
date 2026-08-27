@@ -7,7 +7,9 @@
 [![MySQL](https://img.shields.io/badge/Database-MySQL_8.0-4479A1?logo=mysql&logoColor=white)](https://www.mysql.com/)
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![LangChain](https://img.shields.io/badge/AI-LangChain-1C3C3C?logo=langchain&logoColor=white)](https://www.langchain.com/)
-[![Streamlit](https://img.shields.io/badge/UI-Streamlit-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io/)
+[![GitHub Pages](https://img.shields.io/badge/Live_Demo-GitHub_Pages-22c55e?logo=github&logoColor=white)](https://muntasir-shawon.github.io/FitNut-Fitness-Nutrition-System/)
+
+🌐 **Live Web Application**: [https://muntasir-shawon.github.io/FitNut-Fitness-Nutrition-System/](https://muntasir-shawon.github.io/FitNut-Fitness-Nutrition-System/)
 
 **FitNut AI** is an end-to-end, intelligent fitness and nutrition management ecosystem designed to help users achieve their physical wellness goals. The system integrates a modern **cross-platform mobile app** (iOS/Android/Web), a robust **Node.js/Express & MySQL REST API**, and an advanced **LangChain & OpenRouter AI Chatbot** for tailored workout routines, meal plans, macro calculations, and progress tracking.
 
