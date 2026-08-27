@@ -215,7 +215,7 @@ Follow the steps below to set up and run all three subsystems on your local mach
 
 ---
 
-### 2. Frontend (Mobile App) Setup
+### 2. Frontend (Mobile & Web App) Setup
 
 1. **Navigate to the Frontend directory**:
    ```bash
@@ -227,16 +227,34 @@ Follow the steps below to set up and run all three subsystems on your local mach
    npm install
    ```
 
-3. **Start the Expo Development Server**:
-   ```bash
-   npm run dev
-   ```
-
-4. **Run the App**:
-   - **Mobile (Expo Go)**: Scan the QR code in the terminal using your phone camera (iOS) or Expo Go app (Android).
-   - **Web**: Press <kbd>w</kbd> in the terminal to launch in your browser.
-   - **Android Emulator**: Press <kbd>a</kbd>.
-   - **iOS Simulator**: Press <kbd>i</kbd> (macOS only).
+3. **Run on Web & Mobile**:
+   - **🌐 Web Browser**:
+     ```bash
+     npm run web
+     ```
+     *(Opens automatically in your default web browser at `http://localhost:8081`)*
+   
+   - **📱 Mobile (Expo Go on iOS / Android)**:
+     ```bash
+     npm start
+     ```
+     *(Scan the generated QR code using your phone camera on iOS or the Expo Go app on Android)*
+   
+   - **🤖 Android Emulator**:
+     ```bash
+     npm run android
+     ```
+   
+   - **🍎 iOS Simulator** *(macOS only)*:
+     ```bash
+     npm run ios
+     ```
+   
+   - **📦 Production Web Build**:
+     ```bash
+     npm run build:web
+     ```
+     *(Outputs static web bundle ready for hosting to `Frontend/dist/`)*
 
 ---
 
