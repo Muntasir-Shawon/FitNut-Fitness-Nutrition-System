@@ -1,4 +1,4 @@
-﻿name: Deploy FitNut AI Web to GitHub Pages
+name: Deploy FitNut AI Web to GitHub Pages
 
 on:
   push:
@@ -38,7 +38,10 @@ jobs:
 
       - name: Build Web Application
         working-directory: ./Frontend
-        run: npx expo export --platform web
+        run: |
+          npx expo export --platform web
+          touch dist/.nojekyll
+          cp dist/index.html dist/404.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
