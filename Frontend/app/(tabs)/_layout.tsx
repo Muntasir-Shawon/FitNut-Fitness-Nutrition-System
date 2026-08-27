@@ -1,5 +1,5 @@
 import { Tabs } from 'expo-router';
-import { Chrome as Home, Dumbbell, Calculator, Brain, ChartLine as LineChart, User } from 'lucide-react-native';
+import { Chrome as Home, Dumbbell, Calculator, Brain, ChartLine as LineChart, User, Bot } from 'lucide-react-native';
 
 export default function TabLayout() {
   return (
@@ -18,6 +18,13 @@ export default function TabLayout() {
         options={{
           title: 'Home',
           tabBarIcon: ({ color, size }) => <Home size={size} color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="chat"
+        options={{
+          title: 'AI Coach',
+          tabBarIcon: ({ color, size }) => <Bot size={size} color={color} />,
         }}
       />
       <Tabs.Screen

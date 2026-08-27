@@ -1,9 +1,17 @@
+import React, { useState, useEffect } from 'react';
 import { View, Text, ScrollView, Image, StyleSheet, TouchableOpacity } from 'react-native';
 import { router } from 'expo-router';
 import { BlurView } from 'expo-blur';
-import { MessageSquare, ChevronRight } from 'lucide-react-native';
+import { Bot, Sparkles, Dumbbell, Utensils } from 'lucide-react-native';
+import { getCurrentUser, UserProfile } from '../../services/authStorage';
 
 export default function HomeScreen() {
+  const [user, setUser] = useState<UserProfile>(getCurrentUser());
+
+  useEffect(() => {
+    setUser(getCurrentUser());
+  }, []);
+
   return (
     <View style={styles.container}>
       <ScrollView style={styles.scrollView} contentContainerStyle={styles.scrollContent}>
@@ -13,8 +21,8 @@ export default function HomeScreen() {
             style={styles.headerImage}
           />
           <BlurView intensity={80} style={styles.headerContent}>
-            <Text style={styles.greeting}>Welcome back, Alex!</Text>
-            <Text style={styles.stats}>Today's Progress: 75% Complete</Text>
+            <Text style={styles.greeting}>Welcome back, {user.name}!</Text>
+            <Text style={styles.stats}>{user.userId} • Goal: {user.primaryGoal}</Text>
           </BlurView>
         </View>
 
@@ -43,10 +51,10 @@ export default function HomeScreen() {
         <TouchableOpacity 
           style={styles.chatButton}
           activeOpacity={0.8}
-          onPress={() => router.push('/(tabs)/plan')}
+          onPress={() => router.push('/(tabs)/chat')}
         >
-          <MessageSquare size={24} color="#fff" />
-          <Text style={styles.chatButtonText}>Explore FitNut AI Plans</Text>
+          <Bot size={24} color="#fff" />
+          <Text style={styles.chatButtonText}>Chat with FitNut AI Coach</Text>
         </TouchableOpacity>
       </ScrollView>
     </View>
